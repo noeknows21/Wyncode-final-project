@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  
+  before_action :authorize, except: [:new, :create]
+
 
   # GET /users
   # GET /users.json
@@ -28,7 +31,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user, notice: 'User was successfully created.'
+      redirect_to @user, notice: 'Account was successfully created.'
     else
       render :new
     end
