@@ -13,7 +13,18 @@
 
 ActiveRecord::Schema.define(version: 20160226220041) do
 
-# Could not dump table "users" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "session_id"
+    t.boolean  "allow_join"
+    t.string   "token"
+  end
 
 end
