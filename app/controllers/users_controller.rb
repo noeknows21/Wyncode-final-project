@@ -7,7 +7,6 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    
     @opentok = OpenTok::OpenTok.new 45507072, "dee03bbe56d0e633306e6293b9bf69e97d3e8e10"
     @session = @opentok.create_session :archive_mode => :always, :media_mode => :routed
     @session_id = @session.session_id
@@ -61,6 +60,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    session[:user_id] = nil
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
