@@ -1,12 +1,18 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   
-  before_action :authorize, except: [:new, :create]
+  ### before_action :authorize, except: [:new, :create]
 
 
   # GET /users
   # GET /users.json
   def index
+    
+    @opentok = OpenTok::OpenTok.new 45507072, "dee03bbe56d0e633306e6293b9bf69e97d3e8e10"
+    @session = @opentok.create_session :archive_mode => :always, :media_mode => :routed
+    @session_id = @session.session_id
+    @token = @session.generate_token
+    
     @users = User.all
   end
 
