@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:create_sesh, :show, :edit, :update, :destroy]
   
   ### before_action :authorize, except: [:new, :create]
 
@@ -7,10 +7,26 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+  end
+  
+  def create_sesh
     @opentok = OpenTok::OpenTok.new 45507072, "dee03bbe56d0e633306e6293b9bf69e97d3e8e10"
     @session = @opentok.create_session :archive_mode => :always, :media_mode => :routed
     @session_id = @session.session_id
     @token = @session.generate_token
+    
+    current_user.token = @session.generate_token
+    
+    current_user.session_id = @session_id
+    current_user.save
+  end
+  
+  def join_sesh
+    @opentok = OpenTok::OpenTok.new 45507072, "dee03bbe56d0e633306e6293b9bf69e97d3e8e10"
+    list1 = User.order(updated_at: :asc)
+    available_user = list1.where.not(session_id: nil).last
+    @session_id = available_user.session_id
+    @token = available_user.token
     
   end
 
@@ -45,15 +61,11 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { render :show, status: :ok, location: @user }
+        redirect_to @user, notice: 'User was successfully updated.'
       else
-        format.html { render :edit }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        render :edit
       end
-    end
   end
 
   # DELETE /users/1
