@@ -13,11 +13,6 @@
  *= require_self
  */
  
- 
- body {
-   background-image: url(http://7-themes.com/data_images/out/40/6905984-free-background.jpg);
- }
- 
 
  a {
    color: #000;
@@ -59,5 +54,7 @@
 #alert1 {
   color: red;
 }
+
+
 
 

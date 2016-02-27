@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get '/sessions/new' => 'sessions#new'
   post '/sessions/new' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-  get '/createsession/:id' => 'users#create_sesh'
+  get '/users/createsesh/:id' => 'users#create_sesh'
   get '/joinsession' =>'users#join_sesh'
 
   resources :users
