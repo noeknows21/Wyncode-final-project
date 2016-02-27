@@ -22,17 +22,20 @@ class UsersController < ApplicationController
   end
   
   def join_sesh
-    @opentok = OpenTok::OpenTok.new 45507072, "dee03bbe56d0e633306e6293b9bf69e97d3e8e10"
-    list1 = User.order(updated_at: :asc)
-    available_user = list1.where.not(session_id: nil).last
-    @session_id = available_user.session_id
-    @token = available_user.token
+    @list1 = User.order(updated_at: :asc)
+    if @list1.where.not(session_id: nil).last
+      available_user = @list1.where.not(session_id: nil).last
+      @session_id = available_user.session_id
+      @token = available_user.token
+    end
     
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    current_user.session_id = nil
+    current_user.save
   end
 
   # GET /users/new
@@ -87,6 +90,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation, :session_id, :allow_join)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation, :session_id, :allow_join, :token)
     end
 end
