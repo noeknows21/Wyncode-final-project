@@ -1,0 +1,17 @@
+
+
+<%if User.where.not(session_id: nil).last%>
+
+  <h3> Available Sessions </h3>
+  <% @list2.each do |u| %>
+    <%= link_to u.name, '/joinsession' %>
+    <% $lol_chosen_user = u %>
+  <%end%>
+  
+<%else%>
+  <h4> Sorry, no available sessions. Try creating your own! <h4>
+  <%= link_to 'Create Session', ('/users/createsesh/' + current_user.id.to_s)%> 
+  <br> <br> <br>
+  <%= link_to 'Dashboard', current_user %>
+
+<%end%>

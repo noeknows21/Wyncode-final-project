@@ -22,13 +22,17 @@ class UsersController < ApplicationController
   end
   
   def join_sesh
-    @list1 = User.order(updated_at: :asc)
-    if @list1.where.not(session_id: nil).last
-      available_user = @list1.where.not(session_id: nil).last
-      @session_id = available_user.session_id
-      @token = available_user.token
+
+      @session_id = $lol_chosen_user.session_id
+      @token = $lol_chosen_user.token
+
+  end
+  
+  def join_hub
+    # @list1 = User.order(updated_at: :asc)
+    if User.where.not(session_id: nil).last
+      @list2 = User.where.not(session_id: nil)
     end
-    
   end
 
   # GET /users/1

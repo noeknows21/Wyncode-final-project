@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
   get '/users/createsesh/:id' => 'users#create_sesh'
   get '/joinsession' =>'users#join_sesh'
+  get '/joinhub' =>'users#join_hub'
 
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
