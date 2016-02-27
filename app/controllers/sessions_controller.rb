@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       redirect_to current_user
     else
     # If user's login doesn't work, send them back to the login form.
-      redirect_to '/login', notice: 'Invalid Credentials'
+      redirect_to '/sessions/new', notice: 'Invalid Credentials'
     end
   end
 
@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
     # current_user.session_id = nil
     current_user.save
     session[:user_id] = nil
-    redirect_to '/login'
+    redirect_to '/sessions/new'
   end
 
 

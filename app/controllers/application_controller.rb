@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   # Authorize is for sending someone to the login page if they aren't logged in 
   #add before_action :authorize to controllers you want to enforce this on
   def authorize
-    redirect_to '/login' unless current_user
+    redirect_to '/sessions/new' unless current_user
   end
   
 end

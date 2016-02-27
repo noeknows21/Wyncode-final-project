@@ -1,9 +1,10 @@
+<!-- <%= stylesheet_link_tag params[:controller] %> -->
 
 <p id="alert1"> <%= notice %> </p>
 
 <h1>Login</h1>
 
-<%= form_tag '/login' do %>
+<%= form_tag '/sessions/new' do %>
 
     <%= label_tag :email %>
     <%= text_field_tag :email %>
@@ -12,5 +13,9 @@
     <%= password_field_tag :password %>
   
     <%= submit_tag "Submit" %>
+    
+    <br>
+    
+    <%= link_to "Not registered? Signup here", new_user_path %>
 
 <% end %>
