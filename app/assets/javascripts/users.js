@@ -164,7 +164,7 @@ function ready() {
     disconnect();
   });
   show('connectLink');
-}
+
 
 
 //--------------------------------------
@@ -192,8 +192,9 @@ form.on('submit', function(event) {
 msgHistory = $("#history")
 session.on('signal:chat', function(event) {
   var msg = $('#history');
+  console.log(msg)
   msg.innerHTML = event.data;
   msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
-  msgHistory.append (msg);
+  msgHistory.append(msg.innerHTML);
 });
 }
