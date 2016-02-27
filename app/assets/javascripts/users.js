@@ -1,8 +1,8 @@
 $(document).on('ready page:load', ready);
 function ready() {
-  
-  
-  
+
+
+
 
   var apiKey = 45507072; // Replace with your API key. See https://dashboard.tokbox.com/projects
   var sessionId = $('#foo-name').val(); // Replace with your own session ID. See https://dashboard.tokbox.com/projects
@@ -165,3 +165,8 @@ function ready() {
   });
   show('connectLink');
 }
+
+
+//--------------------------------------
+//  OPENTOK TEXT CHAT
+//--------------------------------------
