@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:create_sesh, :show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
   
   ### before_action :authorize, except: [:new, :create]
 
@@ -19,6 +19,10 @@ class UsersController < ApplicationController
     
     current_user.session_id = @session_id
     current_user.save
+  end
+  
+  def create_hub
+    @needed_id = current_user.id
   end
   
   def join_sesh

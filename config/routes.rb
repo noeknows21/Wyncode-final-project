@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/users/createsesh/:id' => 'users#create_sesh'
   get '/joinsession' =>'users#join_sesh'
   get '/joinhub' =>'users#join_hub'
+  get '/createhub' => 'users#create_hub'
 
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
