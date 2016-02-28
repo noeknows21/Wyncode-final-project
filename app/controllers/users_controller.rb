@@ -26,9 +26,10 @@ class UsersController < ApplicationController
   end
   
   def join_sesh
-
-      @session_id = $lol_chosen_user.session_id
-      @token = $lol_chosen_user.token
+      chosen_user = User.find(params[:id])
+      
+      @session_id = chosen_user.session_id
+      @token = chosen_user.token
 
   end
   

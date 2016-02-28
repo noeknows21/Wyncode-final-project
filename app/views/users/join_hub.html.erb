@@ -4,8 +4,7 @@
 
   <h3> Available Sessions </h3>
   <% @list2.each do |u| %>
-    <%= link_to u.name, '/joinsession' %>
-    <% $lol_chosen_user = u %>
+    <p><%= link_to (u.name + "'s session") , ('/joinsession/' + u.id.to_s) %> </p>
   <%end%>
   
 <%else%>
