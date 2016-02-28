@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+
   get '/sessions/new' => 'sessions#new'
   post '/sessions/new' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   get '/joinsession/:id' =>'users#join_sesh'
   get '/joinhub' =>'users#join_hub'
   get '/createhub' => 'users#create_hub'
+  get 'rooms/create_private/:sesh' => 'rooms#create_private'
 
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.

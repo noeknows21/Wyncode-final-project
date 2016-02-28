@@ -23,6 +23,9 @@ class UsersController < ApplicationController
   
   def create_hub
     @needed_id = current_user.id
+    
+    @opentok = OpenTok::OpenTok.new 45507072, "dee03bbe56d0e633306e6293b9bf69e97d3e8e10"
+    $session = @opentok.create_session :archive_mode => :always, :media_mode => :routed
   end
   
   def join_sesh

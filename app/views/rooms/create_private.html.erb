@@ -1,0 +1,19 @@
+
+<%= hidden_field_tag "foo_name", @session_id, { :id => "foo-name" }%>
+<%= hidden_field_tag "token", @token, { :id => "token" }%>
+
+<p id="notice"><%= notice %></p>
+
+<div id="opentok_console"></div>
+<div id="links">
+  <input type="button" value="Create Room" id ="connectLink">
+  <input type="button" value="Leave Room" id ="disconnectLink">
+  <input type="button" value="Start Publishing" id ="publishLink">
+  <input type="button" value="Stop Publishing" id ="unpublishLink">
+</div>
+<div id="myCamera" class="publisherContainer"></div>
+<div id="subscribers"></div>
+
+<br> <br>
+
+<%= link_to 'Dashboard', current_user %>
