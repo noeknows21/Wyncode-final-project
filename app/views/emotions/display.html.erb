@@ -1,0 +1,9 @@
+
+<% body = JSON.parse(@response.body) %>
+<%= body %>
+<% body['frames'].each do |f| %>
+ <% f['person']['emotions'].each do |k, v| %>
+   <%= "#{k}: "%>
+   <%= v %><br>
+ <% end %>
+<% end %>
