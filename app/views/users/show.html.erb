@@ -27,6 +27,6 @@
 </p>
 
 <%= link_to 'Edit Profile', edit_user_path(@user) %> |
-<%= link_to 'Create Session', '/createhub'%> |
-<%= link_to 'Find a Session', '/joinhub'%> |
+<%= link_to 'Create Session', '/rooms/create_hub'%> |
+<%= link_to 'Find a Session', '/rooms/join_hub'%> |
 <%= link_to 'Delete account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>
