@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  
+
   ### before_action :authorize, except: [:new, :create]
 
 
@@ -8,31 +8,33 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
   end
-  
+
   def create_sesh
-    @opentok = OpenTok::OpenTok.new 45507072, "dee03bbe56d0e633306e6293b9bf69e97d3e8e10"
+    # @opentok = OpenTok::OpenTok.new 45507072, "dee03bbe56d0e633306e6293b9bf69e97d3e8e10"
+    # testing with sean's api key & secret key
+    @opentok = OpenTok::OpenTok.new 45508312, "8face9e9bb645dd756bd1def75b786bbad83ea75"
     @session = @opentok.create_session :archive_mode => :always, :media_mode => :routed
     @session_id = @session.session_id
     @token = @session.generate_token
-    
+
     current_user.token = @session.generate_token
-    
+
     current_user.session_id = @session_id
     current_user.save
   end
-  
+
   def create_hub
     @needed_id = current_user.id
   end
-  
+
   def join_sesh
       chosen_user = User.find(params[:id])
-      
+
       @session_id = chosen_user.session_id
       @token = chosen_user.token
 
   end
-  
+
   def join_hub
     # @list1 = User.order(updated_at: :asc)
     if User.where.not(session_id: nil).last
@@ -68,7 +70,7 @@ class UsersController < ApplicationController
       render :new
     end
   end
-  
+
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
