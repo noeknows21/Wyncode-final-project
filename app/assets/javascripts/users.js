@@ -1,9 +1,6 @@
 $(document).on('ready page:load', ready);
 function ready() {
-
-
-
-
+  
   var apiKey = 45508312; // Replace with your API key. See https://dashboard.tokbox.com/projects
   var sessionId = $('#foo-name').val(); // Replace with your own session ID. See https://dashboard.tokbox.com/projects
   var token = $('#token').val();  // Replace with a generated token. See https://dashboard.tokbox.com/projects

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get '/rooms/create_hub'
   get '/rooms/create_private/:sesh' => 'rooms#create_private'
   post '/rooms/join_hub' => 'rooms#check_code'
+  get 'emotions/display'
+  get 'info/about_tech'
 
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
