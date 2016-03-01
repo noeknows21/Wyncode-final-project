@@ -23,10 +23,10 @@ HEADER
   width: 490px;
 }
 
-h1 {
+.titles h1 {
   font-family: 'Changa One', sans-serif;
   margin: 15px 0;
-  font-size: 1.75em;
+  font-size: 1.30em;
   font-weight: normal;
   line-height: 0.8em;
   position: relative;
@@ -35,8 +35,8 @@ h1 {
   /*top: 1.5em;*/
 }
 
-h2 {
-  font-size: 0.75em;
+.titles h2 {
+  font-size: 1.15em;
   margin: -5px 0 0;
   font-weight: normal;
   position: relative;
@@ -146,5 +146,5 @@ FOOTER CONTACT
 }
 
 .list-unstyled{
-  
+
 }
