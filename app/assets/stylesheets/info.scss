@@ -7,19 +7,20 @@
 HEADER
 ***********************************/
 
-#footer-background {
+#header-background {
   background-color: #CCC;
   float: left;
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
+  position: static;
   /*height: 30vh;*/
 }
 
 
 .titles {
-  // float: left;
-  // width: 490px;
+  float: left;
+  width: 490px;
 }
 
 h1 {
@@ -88,12 +89,22 @@ nav a {
   padding: 15px 10px;
 }
 
+/**********************************
+SECTION VIDEO DISPLAY
+***********************************/
+#video-display {
+background: url("https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240");
+height: 1000px;
+position:static;
+// background-size: cover;
+}
+
 
 /**********************************
-SECTION
+SECTION TECNOLOGY
 ***********************************/
 
-#section-background {
+#tecnology-background {
   position: absolute;;
   background-color: hsla(120,60%,70%,0.3);
   color: white;
@@ -103,17 +114,33 @@ SECTION
   padding: 5px 0 0 0;
 }
 
-
 /**********************************
-FOOTER
+SECTION PRODUCT
 ***********************************/
 
-#footer-background {
-  background-color: red;
+
+
+
+
+/**********************************
+SECTION ABOUT
+***********************************/
+
+
+
+
+
+
+/**********************************
+FOOTER CONTACT
+***********************************/
+
+#contact-background {
+  background-color: #CCC;
   font-size: 0.85em;
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
+  // color: #ccc;
   margin-top: 150em
 }
