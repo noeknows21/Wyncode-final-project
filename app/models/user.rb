@@ -5,4 +5,13 @@ class User < ActiveRecord::Base
   # validates :email, uniqueness: { case_sensitive: false },
   #           format: {with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i}
   # validates :password, length: { minimum: 6 }
+  validate :repcode, :repcode_validate
+  
+  def repcode_validate
+    if repcode == ""
+      return
+    elsif repcode != "abc"
+      errors.add(:repcode, "is not valid")
+    end
+  end
 end
