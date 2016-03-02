@@ -53,8 +53,7 @@ width: 5em;
 position: relative;
 float: left;
 margin: 0 0 0 2em;
-/*top: 3.2em;*/
-/*right: 39em;*/
+
 }
 
 #title-logo {
@@ -124,7 +123,7 @@ SECTION PRODUCT
 
 #product-background {
 
-  background-color: hsla(180,60%,70%,0.3);
+  background-color: #fff;
   color: white;
   width: 100%;
   height: 690px;
@@ -141,7 +140,7 @@ SECTION ABOUT
 
 #about-background {
 
-  background-color: #fff;
+  background-color: hsla(180,60%,70%,0.3);
   color: white;
   width: 100%;
   height: 690px;
@@ -149,6 +148,9 @@ SECTION ABOUT
   // padding: 5px 0 0 0;
   position: static;
 }
+
+
+
 
 /**********************************
 SECTION TECNOLOGY
@@ -164,7 +166,6 @@ SECTION TECNOLOGY
   // padding: 5px 0 0 0;
   position: static;
 }
-
 
 
 
