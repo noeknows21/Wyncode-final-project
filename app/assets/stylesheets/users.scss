@@ -1,6 +1,29 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* The animation code */
+
+#edit-title {
+  position: relative;
+  left: 0.25em;
+}
+
+@keyframes across {
+    0%   {left: 0;}
+    25%  {left: 4em;}
+    50%  {left: 0em}
+    75% {left: -4em;}
+    100% {left: 0em;}
+}
+
+#notice {
+  font-size: 1.5em;
+  color: #003300;
+  position: relative;
+  text-align: center;
+  animation-name: across;
+  animation-duration: 6s;
+}
 
 body  {
     background-image: url('https://images.unsplash.com/photo-1430609098125-581618d0482f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9fe2ffe3b97c96c4c2dd690dcfcff4e1');
@@ -32,7 +55,7 @@ body  {
   background-color: white;
 }
 
-#back-to-login {
+#back-to-login, #back-to-dash {
   border-radius: 7px;
   height:1.5em;
   width: 11.3em;
@@ -44,7 +67,7 @@ body  {
     background-color: white;
 }
   
-#back-to-login:hover, .actions input:hover {
+#back-to-login:hover, .actions input:hover, #back-to-dash:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
   
