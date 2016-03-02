@@ -138,7 +138,7 @@ function ready() {
     var subscriberProps = {width: VIDEO_WIDTH, height: VIDEO_HEIGHT};
     subscribers[stream.streamId] = session.subscribe(stream, subscriberDiv.id, subscriberProps);
   }
-
+  
   function show(id) {
     document.getElementById(id).style.display = 'block';
   }
