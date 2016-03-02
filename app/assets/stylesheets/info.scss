@@ -179,26 +179,28 @@ FOOTER  /  CONTACT
   height: 200px;
 }
 
-.contact-title {
-  font-family: 'Fredoka One', cursive;
-  font-size: 20px;
-  color: 	#e6e6e6;
-  margin: 20px 1000px 0 40px;
-  padding: 20px 0 0 0 ;
-}
+// .contact-title {
+//   font-family: 'Fredoka One', cursive;
+//   font-size: 20px;
+//   color: 	#e6e6e6;
+//   margin: 20px 1000px 0 40px;
+//   padding: 20px 0 0 0 ;
+// }
 
 #contact-icons {
-  margin: 50px 1000px 0 15px;
+  margin: 180px 1000px 0 0px;
+  padding-top: 100px
 }
 
 i {
   color: #fff;
-  margin: 0px 15px 0 30px;
+  margin: -5px 15px 0 30px;
 }
 
 .phone { margin: 0 0 15px 3px; }
 
-.list-unstyled{ }
+.list-unstyled{
+}
 
 #all-social-icons{
   text-align: center;
@@ -229,12 +231,12 @@ i {
   font-family: 'courier new', monospace;
   font-size: 12px;
   text-align: center;
-  margin: 20px 290px 0 316px;
+  margin: 15px 290px 0 316px;
   color: #ccc;
 }
 
 #address {
   text-align: right;
   float: right;
-  margin: -80px 50px 0 0;
+  margin: -70px 50px 0 0px;
 }
