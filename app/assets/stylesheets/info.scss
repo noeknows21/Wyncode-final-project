@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 /**********************************
 HEADER
 ***********************************/
@@ -131,20 +130,6 @@ position:static;
 }
 
 
-/**********************************
-SECTION TECNOLOGY
-***********************************/
-
-#tecnology-background {
-
-  background-color: #fff;
-  // color: white;
-  width: 100%;
-  height: 690px;
-  // margin-top: 0em;
-  // padding: 5px 0 0 0;
-  position: static;
-}
 
 /**********************************
 SECTION PRODUCT
@@ -178,23 +163,58 @@ SECTION ABOUT
   position: static;
 }
 
+/**********************************
+SECTION TECNOLOGY
+***********************************/
+
+#tecnology-background {
+
+  background-color: #fff;
+  // color: white;
+  width: 100%;
+  height: 690px;
+  // margin-top: 0em;
+  // padding: 5px 0 0 0;
+  position: static;
+}
 
 
 
 
 /**********************************
-FOOTER CONTACT
+FOOTER  /  CONTACT
 ***********************************/
 
 #contact-background {
   background-color: #454545;
-  text-align: center;
   position: static;
   height: 200px;
 }
 
-.list-unstyled{
+.contact-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  color: 	#e6e6e6;
+  margin: 20px 1000px 0 40px;
+  padding: 20px 0 0 0 ;
+}
 
+#contact-icons {
+  margin: 50px 1000px 0 0;
+}
+
+i {
+  color: #fff;
+  margin: 0 15px;
+}
+
+.phone { margin: 0 0 15px 3px; }
+
+.list-unstyled{ }
+
+#all-social-icons{
+  text-align: center;
+  margin: -50px 410px 0 410px;
 }
 
 #social-icon {
@@ -202,12 +222,12 @@ FOOTER CONTACT
   height: 10px;
   margin: 0 5px 0 25px;
   color: #fff;
-  text-align: center;
-
-  /*position: fixed;*/
+  // position: static;
 }
 
-
-i {
-  margin: 0 15px;
+.copyright {
+  font-size: 11px;
+  text-align: center;
+  margin: 20px 290px 0 316px;
+  color: #fff;
 }
