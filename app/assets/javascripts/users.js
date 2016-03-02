@@ -161,4 +161,5 @@ function ready() {
     disconnect();
   });
   show('connectLink');
+  connect();
 }

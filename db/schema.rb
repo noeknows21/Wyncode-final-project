@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160226220041) do
+ActiveRecord::Schema.define(version: 20160229225328) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20160226220041) do
     t.string   "session_id"
     t.boolean  "allow_join"
     t.string   "token"
+    t.string   "repcode"
   end
 
 end

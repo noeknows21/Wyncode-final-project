@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name, placeholder: "Rick" %>
+    <%= f.text_field :name, placeholder: "Alan Turing" %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, placeholder: "TuringComplete@gmail.com" %>
   </div>
   <div class="field">
     <%= f.label :password %><br>
@@ -26,6 +26,10 @@
   <div class="field">
     <%= f.label :password_confirmation, "Confirm Password" %><br>
     <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="field">
+    <%= f.label :repcode, "Admin? Add your Rep Code below " %><br>
+    <%= f.password_field :repcode %>
   </div>
   <div class="actions">
     <%= f.submit %>
