@@ -8,7 +8,7 @@ HEADER
 
 #header-background {
   background-color: black;
-  float: left;
+  // float: left;
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
@@ -113,9 +113,16 @@ background: url("https://images.unsplash.com/photo-1445346366695-5bf62de05412?ix
 height: 690px;
 position:static;
 // background-size: cover;
+padding-top: 70px;
 }
 
-
+.demo-btn {
+  // background-color: #3face2;
+  text-align: center;
+  // color: black;
+  // padding: 15px 32px;
+  // border-radius: 10px;
+}
 
 /**********************************
 SECTION PRODUCT
@@ -189,7 +196,7 @@ FOOTER  /  CONTACT
 
 #contact-icons {
   margin: 180px 1000px 0 0px;
-  padding-top: 100px
+  padding-top: 120px
 }
 
 i {
@@ -204,7 +211,7 @@ i {
 
 #all-social-icons{
   text-align: center;
-  margin: -50px 410px 0 410px;
+  margin: -60px 410px 0 410px;
 }
 
 #social-icon {
@@ -238,5 +245,5 @@ i {
 #address {
   text-align: right;
   float: right;
-  margin: -70px 50px 0 0px;
+  margin: -90px 50px 0 0px;
 }
