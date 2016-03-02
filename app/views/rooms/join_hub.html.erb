@@ -1,3 +1,5 @@
+<% if current_user.repcode != nil %>
+
 <h3> Private Session </h3>
 <%= form_tag '/rooms/join_hub' do %>
     <!-- <p> Enter your code: </p> -->
@@ -8,19 +10,22 @@
 
 <% end %>
 
+<%end%>
+
 
 
 <%if User.where.not(session_id: nil).last%>
 
-  <h3> Public Sessions </h3>
+  <h3> Available Representatives </h3>
   <% @list2.each do |u| %>
-    <p><%= link_to (u.name + "'s session") , ('/rooms/join_sesh/' + u.id.to_s) %> </p>
+    <p><%= link_to (u.name) , ('/rooms/join_sesh/' + u.id.to_s) %> </p>
   <%end%>
   
 <%else%>
   <h4> Sorry, no public sessions! <h4>
   <%= link_to 'Create Session', ('/rooms/create_sesh/' + current_user.id.to_s)%> 
-  <br> <br> <br>
-  <%= link_to 'Dashboard', current_user %>
 
 <%end%>
+
+<br> <br>
+<%= link_to 'Dashboard', current_user %>
