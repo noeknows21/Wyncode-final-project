@@ -5,6 +5,7 @@
   <!-- favicon format
   <link rel="SHORTCUT ICON" href="http://domain and path/favicon.ico" />
   <link rel="icon" href="http://domain and path/favicon.ico" type="image/ico" /> -->
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="http://www.veryicon.com/icon/ico/Emoticon/IconTexto%20Emoticons/Smile%20Face.ico" />
   <link rel="icon" href="http://www.veryicon.com/icon/ico/Emoticon/IconTexto%20Emoticons/Smile%20Face.ico" type="image/ico" />
   <script src="https://static.opentok.com/webrtc/v2.2/js/opentok.min.js" type="text/javascript" charset="utf-8"></script> 
@@ -16,11 +17,11 @@
   
   <% if (current_user && params[:action] != "new")%>
     <aside id="aside-menu">
-      <button type="button", id="options"> Options </button>
       <p id="hello-user"> Hello <%= current_user.name %> 
       <p id="menu-logout"> <%= link_to "Logout", '/logout' %> </p>
       <p id="exit-demo"> Exit Demo </p>
       <p id="hide-options"> Hide Options </p> 
+      <button type="button", id="options"> Options   🔽 </button>
     </aside>
   <% end %>
   

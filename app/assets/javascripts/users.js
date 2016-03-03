@@ -7,6 +7,7 @@ function ready() {
   $('#hide-options').hide();
   
   $('#options').click(function() {
+    $('#options').hide();
     $('#hello-user').fadeIn( 1000);
     $('#menu-logout').fadeIn( 2000);
     $('#exit-demo').fadeIn( 3000);
@@ -18,6 +19,7 @@ function ready() {
     $('#menu-logout').hide();
     $('#exit-demo').hide();
     $('#hide-options').hide();
+    $('#options').show();
   });
   
 

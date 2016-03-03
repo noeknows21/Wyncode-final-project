@@ -12,10 +12,28 @@
  *
  *= require_self
  */
+ 
+ #options {
+   border-radius: 5px;
+   background-color:  #ccffff;
+   font-family: 'Arvo', serif !important;
+   width: 7em;
+   font-size: 0.9em;
+ }
+ 
+ #options:hover {
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
 
 #aside-menu {
   position: fixed;
-  left: 85vw;
+  left: 90vw;
+  font-family: 'Arvo', serif !important;
+}
+
+#hide-options {
+  cursor:url(http://orig10.deviantart.net/ae1f/f/2015/020/a/3/hearthstone_cursor_by_sonic4000-d8er4gl.png), auto;
+  text-decoration: underline;
 }
 
  a {
