@@ -102,7 +102,8 @@ function ready() {
     //for (var i = 0; i < event.streams.length; i++) {
     //	addStream(event.streams[i]);
     //}
-    show('disconnectLink');
+    
+    // show('disconnectLink');
     show('publishLink');
     hide('connectLink');
   }
@@ -124,7 +125,7 @@ function ready() {
     // will automatically be removed. This default behaviour can be prevented using event.preventDefault()
     publisher = null;
 
-    show('connectLink');
+    // show('connectLink');
     hide('disconnectLink');
     hide('publishLink');
     hide('unpublishLink');
@@ -185,6 +186,10 @@ function ready() {
   $('#disconnectLink').click(function() {
     disconnect();
   });
-  show('connectLink');
+  show ('connectLink');
   connect();
+  hide('disconnectLink');
+  hide('connectLink');
+  
+  
 }
