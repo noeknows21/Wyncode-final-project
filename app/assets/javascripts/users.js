@@ -5,13 +5,15 @@ function ready() {
   $('#menu-logout').hide();
   $('#exit-demo').hide();
   $('#hide-options').hide();
+  $('#menu-dash').hide();
   
   $('#options').click(function() {
     $('#options').hide();
-    $('#hello-user').fadeIn( 1000);
+    $('#hello-user').fadeIn( 500);
+    $('#menu-dash').fadeIn( 1250);
     $('#menu-logout').fadeIn( 2000);
-    $('#exit-demo').fadeIn( 3000);
-    $('#hide-options').fadeIn(4000);
+    $('#exit-demo').fadeIn( 2750);
+    $('#hide-options').fadeIn(3500);
   });
   
   $('#hide-options').click(function() {
@@ -19,6 +21,7 @@ function ready() {
     $('#menu-logout').hide();
     $('#exit-demo').hide();
     $('#hide-options').hide();
+    $('#menu-dash').hide();
     $('#options').show();
   });
   
