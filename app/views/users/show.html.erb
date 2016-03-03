@@ -16,20 +16,16 @@
 	</g>
 </svg>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<%= link_to 'Edit Profile', edit_user_path(@user) %> |
-<%= link_to 'Delete account', @user, method: :delete, data: { confirm: 'Are you sure?' } %>  |
-<%= link_to 'Find a Session', '/rooms/join_hub'%>
+<div class="dash-links">
 <% if current_user.repcode %>
-	|  <%= link_to 'Create Session', '/rooms/create_hub'%>
+	<a href='/rooms/create_hub', class="myButton"> Create Session </a>
 <%end%>
+<br> <br>
+<a href='/rooms/join_hub', class="myButton"> Find Session </a>
+<br> <br>
+<a href='/users/<%=@user.id%>/edit', class="myButton"> Edit Profile</a>
+<br> <br>
+<%= button_to 'Delete account', @user, method: :delete, data: { confirm: 'Are you sure?' }, class: "myButton", id:"delete-acct"%> 
+</div>
+
 
