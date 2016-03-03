@@ -131,7 +131,7 @@
 }
 
 
-	#lol ~ div {
+	#lol ~ div ~div{
   width: 500px !important;
   height: 500px !important;
 }
