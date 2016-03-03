@@ -12,11 +12,15 @@
  *
  *= require_self
  */
- 
+
+#aside-menu {
+  position: fixed;
+  left: 85vw;
+}
 
  a {
    color: #000;
-
+   cursor:url(http://orig10.deviantart.net/ae1f/f/2015/020/a/3/hearthstone_cursor_by_sonic4000-d8er4gl.png), auto;
    &:visited {
      color: #666;
    }

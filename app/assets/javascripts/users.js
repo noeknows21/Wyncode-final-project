@@ -1,7 +1,24 @@
 $(document).on('ready page:load', ready);
 function ready() {
   
+  $('#hello-user').hide();
+  $('#menu-logout').hide();
+  $('#exit-demo').hide();
+  $('#hide-options').hide();
   
+  $('#options').click(function() {
+    $('#hello-user').fadeIn( 1000);
+    $('#menu-logout').fadeIn( 2000);
+    $('#exit-demo').fadeIn( 3000);
+    $('#hide-options').fadeIn(4000);
+  });
+  
+  $('#hide-options').click(function() {
+    $('#hello-user').hide();
+    $('#menu-logout').hide();
+    $('#exit-demo').hide();
+    $('#hide-options').hide();
+  });
   
 
   var apiKey = 45508312; // Replace with your API key. See https://dashboard.tokbox.com/projects

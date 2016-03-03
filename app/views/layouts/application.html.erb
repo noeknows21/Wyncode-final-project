@@ -14,9 +14,16 @@
 </head>
 <body>
   
-  <% if (current_user && params[:controller] != "sessions")%>
-    <p> Hello <%= current_user.name %> | <%= link_to "Logout", '/logout' %> </p>
+  <% if (current_user && params[:action] != "new")%>
+    <aside id="aside-menu">
+      <button type="button", id="options"> Options </button>
+      <p id="hello-user"> Hello <%= current_user.name %> 
+      <p id="menu-logout"> <%= link_to "Logout", '/logout' %> </p>
+      <p id="exit-demo"> Exit Demo </p>
+      <p id="hide-options"> Hide Options </p> 
+    </aside>
   <% end %>
+  
 
 <%= yield %>
 
