@@ -46,10 +46,10 @@ class RoomsController < ApplicationController
     end
   end
   
-  private
   
   def check_code
     redirect_to ('https://immense-savannah-32539.herokuapp.com/rooms/create_private/' + params[:code])
+    # redirect_to ('http://localhost:3000/rooms/create_private/' + params[:code])
   end
   
   

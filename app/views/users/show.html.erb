@@ -17,7 +17,7 @@
 </svg>
 
 <div class="dash-links">
-<% if current_user.repcode %>
+<% if current_user.repcode != "" %>
 	<a href='/rooms/create_hub', class="myButton"> Create Session </a>
 <%end%>
 <br> <br>
