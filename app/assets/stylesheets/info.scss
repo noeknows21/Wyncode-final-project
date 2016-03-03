@@ -110,7 +110,7 @@ SECTION VIDEO DISPLAY
 
 #video-display {
 background: url("https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240");
-height: 690px;
+height: 680px;
 position: relative;
 // background-size: cover;
 padding-top: 70px;
@@ -138,6 +138,7 @@ padding-top: 70px;
 button:hover {
   background-color: black;
   color: #ccc;
+  border: black;
 }
 
 /**********************************
@@ -190,7 +191,10 @@ SECTION TECNOLOGY
   position: static;
 }
 
-
+.tec-image {
+  text-align: center;
+  margin: 140px;
+}
 
 /**********************************
 FOOTER  /  CONTACT
