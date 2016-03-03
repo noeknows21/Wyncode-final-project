@@ -6,14 +6,16 @@ function ready() {
   $('#exit-demo').hide();
   $('#hide-options').hide();
   $('#menu-dash').hide();
+  $('#menu-back').hide();
   
   $('#options').click(function() {
     $('#options').hide();
     $('#hello-user').fadeIn( 500);
-    $('#menu-dash').fadeIn( 1250);
+    $('#menu-back').fadeIn(1000);
+    $('#menu-dash').fadeIn( 1500);
     $('#menu-logout').fadeIn( 2000);
-    $('#exit-demo').fadeIn( 2750);
-    $('#hide-options').fadeIn(3500);
+    $('#exit-demo').fadeIn( 2500);
+    $('#hide-options').fadeIn(3000);
   });
   
   $('#hide-options').click(function() {
@@ -22,6 +24,7 @@ function ready() {
     $('#exit-demo').hide();
     $('#hide-options').hide();
     $('#menu-dash').hide();
+    $('#menu-back').hide();
     $('#options').show();
   });
   
