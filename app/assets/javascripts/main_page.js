@@ -6,15 +6,12 @@ $(document).ready(function(){
 
 
     $('.demo-btn').mouseenter(function() {
-      $(this).text('EMOTRAK');
-  });
+      $(this).text('VIEW APP');
+  });                                        //Hover over button and text change.
 
   $('.demo-btn').mouseleave(function() {
-    $(this).text('VIEW APP');
+    $(this).text('EMOTRAK');
 });
-  // $('.demo-btn').hover(function() {
-  //   $(this).replaceWith('VIEW APP');
-  // });
 
 
   // $('arrow-down, i').scroll(function() {
