@@ -95,9 +95,9 @@
    }
  }
  
- aside a {
+ .dash-links a {
    &:visited {
-     color: #000;
+     color: white;
    }
  }
 
