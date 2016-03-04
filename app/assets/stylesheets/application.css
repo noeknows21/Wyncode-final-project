@@ -131,7 +131,10 @@
 }
 
 
-/*#lol + div {*/
+#lol ~ div, #publishLink, #subscribers div:first-child{
+  margin: auto;
+}
+
 #subscribers div:first-child{
   width: 500px !important;
   height: 500px !important;
