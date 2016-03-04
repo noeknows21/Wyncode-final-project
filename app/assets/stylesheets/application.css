@@ -95,7 +95,7 @@
    }
  }
  
- .dash-links a {
+ .dash-links a, .myButton {
    &:visited {
      color: white;
    }
