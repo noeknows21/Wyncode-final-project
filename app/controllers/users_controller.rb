@@ -32,7 +32,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user, notice: 'Account was successfully created.'
+      redirect_to @user, notice: 'Account successfully created.'
     else
       render :new
     end
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
       if @user.update(user_params)
-        redirect_to @user, notice: 'User was successfully updated.'
+        redirect_to @user, notice: 'Information successfully updated.'
       else
         render :edit
       end

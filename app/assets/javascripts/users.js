@@ -1,6 +1,34 @@
 $(document).on('ready page:load', ready);
 function ready() {
-  
+
+  $('#hello-user').hide();
+  $('#menu-logout').hide();
+  $('#exit-demo').hide();
+  $('#hide-options').hide();
+  $('#menu-dash').hide();
+  $('#menu-back').hide();
+
+  $('#options').click(function() {
+    $('#options').hide();
+    $('#hello-user').fadeIn( 500);
+    $('#menu-back').fadeIn(1000);
+    $('#menu-dash').fadeIn( 1500);
+    $('#menu-logout').fadeIn( 2000);
+    $('#exit-demo').fadeIn( 2500);
+    $('#hide-options').fadeIn(3000);
+  });
+
+  $('#hide-options').click(function() {
+    $('#hello-user').hide();
+    $('#menu-logout').hide();
+    $('#exit-demo').hide();
+    $('#hide-options').hide();
+    $('#menu-dash').hide();
+    $('#menu-back').hide();
+    $('#options').show();
+  });
+
+
   var apiKey = 45508312; // Replace with your API key. See https://dashboard.tokbox.com/projects
   var sessionId = $('#foo-name').val(); // Replace with your own session ID. See https://dashboard.tokbox.com/projects
   var token = $('#token').val();  // Replace with a generated token. See https://dashboard.tokbox.com/projects
@@ -77,7 +105,8 @@ function ready() {
     //for (var i = 0; i < event.streams.length; i++) {
     //	addStream(event.streams[i]);
     //}
-    show('disconnectLink');
+
+    // show('disconnectLink');
     show('publishLink');
     hide('connectLink');
   }
@@ -99,7 +128,7 @@ function ready() {
     // will automatically be removed. This default behaviour can be prevented using event.preventDefault()
     publisher = null;
 
-    show('connectLink');
+    // show('connectLink');
     hide('disconnectLink');
     hide('publishLink');
     hide('unpublishLink');
@@ -160,6 +189,10 @@ function ready() {
   $('#disconnectLink').click(function() {
     disconnect();
   });
-  show('connectLink');
+  show ('connectLink');
   connect();
+  hide('disconnectLink');
+  hide('connectLink');
+
+
 }

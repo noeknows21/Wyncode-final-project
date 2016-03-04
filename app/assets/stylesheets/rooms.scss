@@ -1,3 +1,64 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#unpublishLink {
+  top:0.25em;
+  position: relative;
+}
+
+h2, .myButton {
+  text-align: center;
+}
+
+.myButton {
+  position: relative;
+  left: 17vw;
+}
+// 
+h2,h3,h4 {
+font-family: 'Cinzel', serif;
+}
+
+#etoe {
+  font-size: 2em;
+}
+
+form > input {
+  font-size: 1em;
+}
+
+form label {
+  font-size: 1.7em;
+}
+
+form input:nth-child(4){
+  position: relative;
+  bottom:0.1em;
+  left:0.2em;
+  margin-right: 0.25em;
+}
+  
+form input:last-child {
+  width: 4em;
+  height:1.75em;
+}
+
+input {
+  border-radius: 6px;
+  font-size: 1.5em;
+  height: 1.5em;
+  width:13em;
+  background-color: white;
+  font-family: 'Cinzel', serif;
+}
+
+.secret-code {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25em;
+}
+
+.rooms-font-div * {
+  font-family: 'Cinzel', serif;
+}
+  

@@ -13,10 +13,83 @@
  *= require_self
  */
  
+ .myButton {
+ 	-moz-box-shadow: 0px 10px 14px -7px #276873;
+ 	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+ 	box-shadow: 0px 10px 14px -7px #276873;
+ 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+ 	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+ 	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+ 	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+ 	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+ 	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+ 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+ 	background-color:#599bb3;
+ 	-moz-border-radius:8px;
+ 	-webkit-border-radius:8px;
+ 	border-radius:8px;
+ 	display:inline-block;
+ 	cursor:pointer;
+ 	color:#ffffff;
+ 	font-family:Arial;
+ 	font-size:20px;
+ 	font-weight:bold;
+ 	padding:13px 32px;
+ 	text-decoration:none;
+ 	text-shadow:0px 1px 0px #3d768a;
+   width: 20em;
+ }
+ .myButton:hover {
+ 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+ 	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+ 	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+ 	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+ 	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+ 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+ 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+ 	background-color:#408c99;
+ }
+ .myButton:active {
+ 	position:relative;
+ 	top:1px;
+ }
+
+ 
+ body  {
+     background-image: url('https://images.unsplash.com/photo-1430609098125-581618d0482f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9fe2ffe3b97c96c4c2dd690dcfcff4e1');
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ 
+ #options {
+   border-radius: 5px;
+   background-color:  #ccffff;
+   font-family: 'Arvo', serif !important;
+   font-size: 0.9em;
+   left: 6.5em;
+   bottom: 0.5em;
+   position: relative;
+   height: 2.5em;
+ }
+ 
+ #options:hover {
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+#aside-menu {
+  position: fixed;
+  left: 90vw;
+  font-family: 'Arvo', serif !important;
+}
+
+#hide-options {
+  cursor:url(http://orig10.deviantart.net/ae1f/f/2015/020/a/3/hearthstone_cursor_by_sonic4000-d8er4gl.png), auto;
+  text-decoration: underline;
+}
 
  a {
    color: #000;
-
+   cursor:url(http://orig10.deviantart.net/ae1f/f/2015/020/a/3/hearthstone_cursor_by_sonic4000-d8er4gl.png), auto;
    &:visited {
      color: #666;
    }
@@ -53,6 +126,8 @@
 
 #alert1 {
   color: red;
+  text-align: center;
+  font-size: 1.25em;
 }
 
 

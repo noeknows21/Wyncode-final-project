@@ -1,10 +1,86 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* The animation code */
 
+.dash-links {
+  text-align: center;
+}
+
+#delete-acct {
+  width:23.25em;
+  right:0.1em;
+  position: relative;
+  	// background:linear-gradient(to bottom, white 5%, red 100%);
+}
+
+
+#edit-title {
+  position: relative;
+  left: 0.25em;
+}
+
+@keyframes across {
+    0%   {left: 0;}
+    25%  {left: 4em;}
+    50%  {left: 0em}
+    75% {left: -4em;}
+    100% {left: 0em;}
+}
+
+#notice {
+  font-size: 1.5em;
+  color: #003300;
+  position: relative;
+  text-align: center;
+  animation-name: across;
+  animation-duration: 6s;
+}
+
+
+#signup {
+  font-size: 3em;
+  position: relative;
+  left: 0.65em;
+}
+
+.field input {
+  font-size: 1.5em;
+}
+
+.field label {
+  font-size: 1.5em;
+}
+
+.actions input{
+  border-radius: 7px;
+  height:1.5em;
+  width: 11.3em;
+  font-size: 1.5em;
+  // background-color: #3face2;
+  // background-color: #99ddff;
+  background-color: white;
+}
+
+#back-to-login, #back-to-dash {
+  border-radius: 7px;
+  height:1.5em;
+  width: 11.3em;
+  font-size: 1.5em;
+  position: relative;
+  top: 0.5em;
+  // background-color: #3face2;
+    // background-color: #99ddff;
+    background-color: white;
+}
+  
+#back-to-login:hover, .actions input:hover, #back-to-dash:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+  
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
 
 
 svg {
@@ -50,6 +126,4 @@ svg {
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
-
-
 

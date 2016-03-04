@@ -5,6 +5,8 @@
   <!-- favicon format
   <link rel="SHORTCUT ICON" href="http://domain and path/favicon.ico" />
   <link rel="icon" href="http://domain and path/favicon.ico" type="image/ico" /> -->
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cinzel:700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="http://www.veryicon.com/icon/ico/Emoticon/IconTexto%20Emoticons/Smile%20Face.ico" />
   <link rel="icon" href="http://www.veryicon.com/icon/ico/Emoticon/IconTexto%20Emoticons/Smile%20Face.ico" type="image/ico" />
   <script src="https://static.opentok.com/webrtc/v2.2/js/opentok.min.js" type="text/javascript" charset="utf-8"></script> 
@@ -14,9 +16,20 @@
 </head>
 <body>
   
-  <% if current_user %>
-    <p> Hello <%= current_user.name %> | <%= link_to "Logout", '/logout' %> </p>
+  <% if (current_user && params[:action] != "new")%>
+    <aside id="aside-menu">
+      <p id="hello-user"> Hello <%= current_user.name %> 
+      <p id="menu-back">  <%= link_to 'Previous page', :back %>
+      <p id="menu-dash"> <%= link_to 'Dashboard', current_user %>
+      <p id="menu-logout"> <%= link_to "Logout", '/logout' %> </p>
+      <p id="exit-demo"> Exit Demo </p>
+      <p id="hide-options"> Hide Options </p> 
+      <button type="button", id="options"> 
+        🔽
+      </button>
+    </aside>
   <% end %>
+  
 
 <%= yield %>
 

@@ -1,26 +1,32 @@
-<h3> Private Session </h3>
+<%= stylesheet_link_tag params[:controller] %>
+
+<% if current_user.repcode != nil %>
+
+<div class="rooms-font-div">
+<h3 id="etoe"> Employee-to-Employee Session </h3>
 <%= form_tag '/rooms/join_hub' do %>
-    <!-- <p> Enter your code: </p> -->
-    <%= label_tag :enter_your_code%>
+
+    <%= label_tag :enter_your_code, "Enter your code:"%>
     <%= text_field_tag :code %>
   
     <%= submit_tag "Join" %>
 
 <% end %>
 
-
-
-<%if User.where.not(session_id: nil).last%>
-
-  <h3> Public Sessions </h3>
-  <% @list2.each do |u| %>
-    <p><%= link_to (u.name + "'s session") , ('/rooms/join_sesh/' + u.id.to_s) %> </p>
-  <%end%>
-  
-<%else%>
-  <h4> Sorry, no public sessions! <h4>
-  <%= link_to 'Create Session', ('/rooms/create_sesh/' + current_user.id.to_s)%> 
-  <br> <br> <br>
-  <%= link_to 'Dashboard', current_user %>
-
 <%end%>
+
+
+<%if  current_user.repcode ==nil %>
+  <%if User.where.not(session_id: nil).last %>
+    <h3> Available Representatives </h3>
+    <% @list2.each do |u| %>
+      <p><%= link_to (u.name) , ('/rooms/join_sesh/' + u.id.to_s) %> </p>
+    <%end%>
+    
+  <%else%>
+    <h4> Sorry, no public sessions! <h4>
+    <%= link_to 'Create Session', ('/rooms/create_sesh/' + current_user.id.to_s)%> 
+  <%end%>
+<%end%>
+
+</div>

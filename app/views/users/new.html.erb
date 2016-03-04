@@ -1,7 +1,29 @@
 <%= stylesheet_link_tag params[:controller] %>
 
-<h1>Sign Up!</h1>
+
+<h1 id="signup">Sign Up!</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', '/sessions/new' %>
+<a href='/sessions/new'>
+<button type="button", id="back-to-login">
+Back
+</button>
+</a>   
+
+
+<style>
+
+body  {
+      margin-left: 42vw;
+    /*background-image: url('https://images.unsplash.com/photo-1429764721143-77e4363d33c1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9f035b2453a3ee6d9c290579ed280d33');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+* {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
+</style>
+
+

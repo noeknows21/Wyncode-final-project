@@ -1,14 +1,12 @@
+<%= stylesheet_link_tag params[:controller] %>
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<h2> Get that smile ready, you'll be video chatting soon! </h2>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-
-<h2> Get that smile ready, you'll be video chatting sooon! </h2>
-
-<a class="btn btn-primary btn-lg" href="<%= '/rooms/create_sesh/' + @needed_id.to_s%>" role="button">Customer-to-Employee</a>
-<a class="btn btn-danger btn-lg" href="<%= '/rooms/create_private/' + $session.session_id.to_s%>" role="button">Employee-to-Employee</a>
+<a class="myButton" href="<%= '/rooms/create_sesh/' + @needed_id.to_s%>">Customer-to-Employee</a>
+<a class="myButton" href="<%= '/rooms/create_private/' + $session.session_id.to_s%>">Employee-to-Employee</a>
 
 
 <!-- link_to('/createsession' + @needed_id.to_s)  -->
+
+
