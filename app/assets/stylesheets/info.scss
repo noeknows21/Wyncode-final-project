@@ -1,3 +1,281 @@
 // Place all the styles related to the info controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+
+/**********************************
+HEADER
+***********************************/
+
+#header-background {
+  background-color: black;
+  // float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  box-shadow: 0 0 4px -2px #363636;
+}
+
+
+.titles {
+  float: left;
+  width: 490px;
+}
+
+.titles h1 {
+  font-family: 'Fredoka One', cursive;
+  margin: 15px 0 0 100px;
+  font-size: 2.30em;
+  font-weight: normal;
+  line-height: 0.8em;
+  position: relative;
+  color: #fff;
+}
+
+
+// .titles h2 {
+//   font-size: 1.15em;
+//   margin: -5px 0 0;
+//   font-weight: normal;
+//   position: relative;
+//   color: black;
+//
+//   /*left: 4em;*/
+//   /*top: 4em;*/
+// }
+
+
+
+.logo-image{
+height: 5em;
+width: 5em;
+position: relative;
+float: left;
+margin: 0 0 0 2em;
+
+}
+
+#title-logo {
+  text-align: center;
+  margin: 5;
+}
+
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  margin: 30px -100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  // padding-right: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 30px;
+}
+
+// * nav link */
+nav a, nav a:visited {
+  color: #fff;
+
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  text-decoration: none;
+  color: #3face2;
+}
+
+
+
+
+
+
+/**********************************
+SECTION VIDEO DISPLAY
+***********************************/
+
+#video-display {
+background: url("https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240");
+height: 680px;
+position: relative;
+// background-size: cover;
+padding-top: 70px;
+}
+
+.button-demo {
+  text-align: center;
+  margin-top: 245px;
+}
+
+.demo-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px 32px;
+  // text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s;
+  width: 230px;
+}
+
+button:hover {
+  background-color: black;
+  color: #ccc;
+  border: black;
+}
+
+.arrow-down i {
+  float: right;
+  color: black;
+  margin-top: 270px;
+  margin-right: 20px;
+}
+
+/**********************************
+SECTION PRODUCT
+***********************************/
+
+#product-background {
+
+  background-color: #fff;
+  color: white;
+  width: 100%;
+  height: 690px;
+  // margin-top: 0em;
+  // padding: 5px 0 0 0;
+  position: static;
+}
+
+
+
+/**********************************
+SECTION ABOUT
+***********************************/
+
+#about-background {
+
+  background-color: hsla(180,60%,70%,0.3);
+  color: white;
+  width: 100%;
+  height: 690px;
+  // margin-top: 0em;
+  // padding: 5px 0 0 0;
+  position: static;
+}
+
+
+
+
+/**********************************
+SECTION TECNOLOGY
+***********************************/
+
+#tecnology-background {
+
+  background-color: #fff;
+  // color: white;
+  width: 100%;
+  height: 690px;
+  // margin-top: 0em;
+  // padding: 5px 0 0 0;
+  position: static;
+}
+
+.tec-image {
+  text-align: center;
+  margin: 140px;
+}
+
+/**********************************
+FOOTER  /  CONTACT
+***********************************/
+
+#contact-background {
+  background-color: #454545;
+  position: static;
+  height: 200px;
+}
+
+// .contact-title {
+//   font-family: 'Fredoka One', cursive;
+//   font-size: 20px;
+//   color: 	#e6e6e6;
+//   margin: 20px 1000px 0 40px;
+//   padding: 20px 0 0 0 ;
+// }
+
+#contact-icons {
+  margin: 180px 1000px 0 0px;
+  padding-top: 120px
+}
+
+i {
+  color: #fff;
+  margin: -5px 15px 0 30px;
+}
+
+.phone { margin: 0 0 15px 3px; }
+
+.list-unstyled{
+}
+
+#all-social-icons{
+  text-align: center;
+  margin: -70px 410px 0 410px;
+}
+
+#social-icon {
+  // width: 0px;
+  height: 10px;
+  margin: 0 5px 0 25px;
+  color: #fff;
+  // position: static;
+  text-decoration: none;
+}
+
+
+#social-icon, #social-icon:visited {
+  color: #fff;
+}
+
+#social-icon.selected, #social-icon:hover {
+  text-decoration: none;
+  color: #3face2;
+}
+
+
+.copyright {
+  font-family: monospace, serif;
+  font-family: 'courier new', monospace;
+  font-size: 12px;
+  text-align: center;
+  margin: 15px 290px 0 316px;
+  color: #ccc;
+}
+
+#address {
+  text-align: right;
+  float: right;
+  margin: -90px 50px 0 0px;
+}
