@@ -63,22 +63,28 @@
 }
 
 #back-to-login, #back-to-dash {
-  border-radius: 7px;
-  height:1.5em;
-  width: 11.3em;
-  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 13px 10px;
+  width: 230px;
+  font-size: 20px;
   position: relative;
   top: 0.5em;
-  // background-color: #3face2;
-    // background-color: #99ddff;
-    background-color: white;
+  color: #fff;
+  background-color: black;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
 }
-  
-#back-to-login:hover, .actions input:hover, #back-to-dash:hover {
+
+#back-to-login:hover {
+  color: #3face2;
+  border: black;
+}
+
+.actions input:hover, #back-to-dash:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-  
-  
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
@@ -126,4 +132,3 @@ svg {
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
-
