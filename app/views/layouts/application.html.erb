@@ -15,27 +15,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<<<<<<< HEAD
+
 
   <% if current_user && params[:controller] != "info" %>
     <p> Hello <%= current_user.name %> | <%= link_to "Logout", '/logout' %> </p>
-=======
-  
+
+
   <% if (current_user && params[:action] != "new")%>
     <aside id="aside-menu">
-      <p id="hello-user"> Hello <%= current_user.name %> 
+      <p id="hello-user"> Hello <%= current_user.name %>
       <p id="menu-back">  <%= link_to 'Previous page', :back %>
       <p id="menu-dash"> <%= link_to 'Dashboard', current_user %>
       <p id="menu-logout"> <%= link_to "Logout", '/logout' %> </p>
       <p id="exit-demo"> Exit Demo </p>
-      <p id="hide-options"> Hide Options </p> 
-      <button type="button", id="options"> 
+      <p id="hide-options"> Hide Options </p>
+      <button type="button", id="options">
         🔽
       </button>
     </aside>
->>>>>>> 379bf8a8650daeff36679d21389435d86c7b0d01
+
   <% end %>
-  
+
 
 <%= yield %>
 
