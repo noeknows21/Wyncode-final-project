@@ -11,25 +11,25 @@
     <%= label_tag :email %>
     <span id="email-separator"> lll..l </span>
     <%= text_field_tag :email %>
-    
+
     <br>
-          
+
     <%= label_tag :password%>
     <%= password_field_tag :password %>
-    
+
     <br>
-    
+
     <%= submit_tag "Submit", class:"submit-input" %>
-    
+
     <br>
-    
+
     <a href="/users/new">
     <button type="button", id="signup-link">
     Create Account
     </button>
-    </a>   
+    </a>
 
 <% end %>
 </div>
 
-
+<%= link_to 'click me', '/emotions/index' %>

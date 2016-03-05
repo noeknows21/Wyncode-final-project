@@ -54,5 +54,5 @@ end
   gem 'paperclip'
   gem 'aws-sdk', '< 2'
   gem 'dotenv-rails'
-  gem "rubyzip"
+  gem "rubyzip", :require => 'zip'
   gem 'rest-client', '~> 1.8'
