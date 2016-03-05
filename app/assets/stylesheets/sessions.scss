@@ -48,7 +48,7 @@ label {
 
 .submit-input {
   background-color: black;
-  border: 2px solid #fff;
+  border: 2px solid black;
   border-radius: 5px;
   font-size: 20px;
   // height: 40px;
@@ -79,6 +79,7 @@ label {
   background-color: black;
   text-decoration: none;
   -webkit-transition-duration: 0.2s;
+  border: black;
 }
 
 #signup-link:hover {

@@ -42,16 +42,36 @@
   font-family: 'Fredoka One', cursive;
   font-size: 60px;
   position: relative;
-  left: 0.65em;
   text-align: center;
 }
+
+// .field input {
+//   display: inline-block;
+//   text-align: center;
+//   float: left;
+//
+//   font-size: 18px;
+//   // margin-left: 300px;
+// }
+
+// .field {
+//   display: inline-block;
+//   text-align: center;
+//   font-size: 18px;
+//   margin-left: 600px;
+//
+// }
 
 .field {
-  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 25px;
   text-align: center;
-  font-size: 18px;
 }
 
+.text-center {
+  text-align: center;
+}
 
 .actions input{
   border-radius: 5px;
@@ -64,6 +84,8 @@
   background-color: black;
   text-decoration: none;
   -webkit-transition-duration: 0.2s;
+  border: black;
+  text-align: center;
 }
 
 .actions input:hover {
@@ -82,6 +104,14 @@
   background-color: black;
   text-decoration: none;
   -webkit-transition-duration: 0.2s;
+  border: black;
+
+}
+
+#back-to-login {
+  margin-bottom: 100px;
+  // text-align: center;
+  margin-left: 515px;
 }
 
 #back-to-login:hover {
@@ -166,4 +196,5 @@ background-color: #2b2b2b;
 height: 130px;
 width: 100%;
 margin-top: 175px;
+position: relative;;
 }
