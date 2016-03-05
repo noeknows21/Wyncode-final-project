@@ -17,11 +17,7 @@
 <body>
 
 
-  <% if current_user && params[:controller] != "info" %>
-    <p> Hello <%= current_user.name %> | <%= link_to "Logout", '/logout' %> </p>
-  <% end %>
-
-  <% if (current_user && params[:action] != "new")%>
+  <% if current_user && params[:action] != "new" && params[:controller] != "info"%>
     <aside id="aside-menu">
       <p id="hello-user"> Hello <%= current_user.name %>
       <p id="menu-back">  <%= link_to 'Previous page', :back %>

@@ -21,6 +21,11 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to '/sessions/new'
   end
-
+  
+  def new
+    if current_user
+      redirect_to current_user
+    end
+  end
 
 end
