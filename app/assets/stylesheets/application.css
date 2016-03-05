@@ -136,7 +136,7 @@
   margin: auto;
 }
 
-#lol ~ div, #subscribers > div {
+#lol ~ div, #subscribers > div > div{
   border: black 5px;
   border-style: inset;
 }
