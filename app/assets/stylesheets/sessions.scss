@@ -51,50 +51,40 @@ label {
   border: 2px solid #fff;
   border-radius: 5px;
   font-size: 20px;
-  height: 40px;
+  // height: 40px;
+  padding: 13px 32px;
   width: 230px;
   text-decoration: none;
   position:relative;
   margin-top: 20px;
-  -webkit-transition-duration: 0.4s;
-  top: 0.25em;
+  -webkit-transition-duration: 0.2s;
   color: #fff;
 }
 
-.button-input {
-  text-align: center;
-  margin-top: 245px;
+
+.submit-input:hover {
+  color: #3face2;
+  border: black;
 }
-
-.demo-btn {
-  background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 15px 32px;
-  // text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  -webkit-transition-duration: 0.4s;
-  width: 230px;
-}
-
-
-
 
 
 #signup-link {
   position: relative;
   top: 0.5em;
-  // color: gray;
-  font-size: 1.5em;
-  height:1.5em;
-  width: 13.25em;
-  border-radius: 7px;
-  background-color: white;
+  color: #fff;
+  font-size: 20px;
+  width: 230px;
+  padding: 13px 10px;
+  border-radius: 5px;
+  background-color: black;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
 }
 
+#signup-link:hover {
+  color: #3face2;
+  border: black;
+}
 
 #signup-link:hover, .submit-input:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
