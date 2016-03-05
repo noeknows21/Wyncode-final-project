@@ -3,11 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-// body  {
-//     background-image: url('https://images.unsplash.com/photo-1449024540548-94f5d5a59230?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dec4b59ca06926527007bd98670f2800');
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// }
+body  {
+    // background-image: url('https://images.unsplash.com/photo-1449024540548-94f5d5a59230?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dec4b59ca06926527007bd98670f2800');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 // * {
 //   font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
@@ -21,6 +21,7 @@ h1 {
 #login {
   text-align: center;
   font-family: 'Fredoka One', cursive;
+  font-size: 60px;
 }
 
 #sessions-form {
@@ -33,25 +34,55 @@ h1 {
 
 #email {
   font-size: 1em;
+  margin-bottom: 10px;
 }
 
 #password {
   font-size: 1em;
+  margin-left: 4px;
 }
 
 label {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .submit-input {
+  background-color: black;
+  border: 2px solid #fff;
   border-radius: 5px;
-  font-size: 1.5em;
-  height: 1.5em;
-  width:13em;
-  background-color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 230px;
+  text-decoration: none;
   position:relative;
+  margin-top: 20px;
+  -webkit-transition-duration: 0.4s;
   top: 0.25em;
+  color: #fff;
 }
+
+.button-input {
+  text-align: center;
+  margin-top: 245px;
+}
+
+.demo-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px 32px;
+  // text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s;
+  width: 230px;
+}
+
+
+
+
 
 #signup-link {
   position: relative;

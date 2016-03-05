@@ -12,7 +12,7 @@
  *
  *= require_self
  */
- 
+
  .myButton {
  	-moz-box-shadow: 0px 10px 14px -7px #276873;
  	-webkit-box-shadow: 0px 10px 14px -7px #276873;
@@ -54,13 +54,13 @@
  	top:1px;
  }
 
- 
+
  body  {
-     background-image: url('https://images.unsplash.com/photo-1430609098125-581618d0482f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9fe2ffe3b97c96c4c2dd690dcfcff4e1');
+     /*background-image: url('https://images.unsplash.com/photo-1430609098125-581618d0482f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9fe2ffe3b97c96c4c2dd690dcfcff4e1');*/
      background-size: cover;
      background-repeat: no-repeat;
  }
- 
+
  #options {
    border-radius: 5px;
    background-color:  #ccffff;
@@ -71,7 +71,7 @@
    position: relative;
    height: 2.5em;
  }
- 
+
  #options:hover {
      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
  }
@@ -94,7 +94,7 @@
      color: black;
    }
  }
- 
+
  .dash-links a, .myButton {
    &:visited {
      color: white;
@@ -147,7 +147,3 @@
   position: relative;
   top: 0.5em;
 }
-
-
-
-
