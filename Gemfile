@@ -54,3 +54,5 @@ end
   gem 'paperclip'
   gem 'aws-sdk', '< 2'
   gem 'dotenv-rails'
+  gem "rubyzip"
+  gem 'rest-client', '~> 1.8'
