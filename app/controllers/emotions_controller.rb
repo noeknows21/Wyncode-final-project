@@ -17,19 +17,14 @@ class EmotionsController < ApplicationController
     @response = RestClient::Request.execute({:url => @file_url, :method => :get, :content_type => 'application/zip'})
     Zip::File.open_buffer(@response) do |zip_file|
       zip_file.each do |entry|
-        # puts "Extracting #{entry.name}"
-        # p entry, entry.zipfile
 
         # setup your credentials
         AWS.config(access_key_id: ENV['S3_KEY'], secret_access_key: ENV['S3_SECRET'])
 
         # Upload a file.
         s3 = AWS::S3.new
-        # p entry.get_input_stream.read
         s3.buckets[ENV['S3_BUCKET']].objects["#{entry.name}"].write(entry.get_input_stream.read)
 
-
-        # content = entry.get_input_stream.read
       end
     end
   end
