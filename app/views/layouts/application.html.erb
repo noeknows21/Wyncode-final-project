@@ -19,7 +19,7 @@
 
   <% if current_user && params[:controller] != "info" %>
     <p> Hello <%= current_user.name %> | <%= link_to "Logout", '/logout' %> </p>
-
+  <% end %>
 
   <% if (current_user && params[:action] != "new")%>
     <aside id="aside-menu">
