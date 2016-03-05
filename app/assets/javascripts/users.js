@@ -217,7 +217,7 @@ function ready() {
       }
     );
   });
-
+  
   msgHistory = $("#history")
   session.on('signal:chat', function(event) {
     var msg = $('#history');
@@ -226,7 +226,6 @@ function ready() {
     msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
     msgHistory.append(msg.innerHTML);
   });
-
-  }
+  
 
 }
