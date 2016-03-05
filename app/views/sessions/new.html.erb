@@ -2,22 +2,34 @@
 
 <p id="alert1"> <%= notice %> </p>
 
-<h1>Login</h1>
+<h1 id="login">Login</h1>
+
+<div id="sessions-form">
 
 <%= form_tag '/sessions/new' do %>
 
     <%= label_tag :email %>
+    <span id="email-separator"> lll..l </span>
     <%= text_field_tag :email %>
+    
+    <br>
           
     <%= label_tag :password%>
     <%= password_field_tag :password %>
-  
-    <%= submit_tag "Submit" %>
     
     <br>
     
-    <%= link_to "Not registered? Signup here", new_user_path %>
+    <%= submit_tag "Submit", class:"submit-input" %>
+    
+    <br>
+    
+    <a href="/users/new">
+    <button type="button", id="signup-link">
+    Create Account
+    </button>
+    </a>   
 
 <% end %>
+</div>
 
 

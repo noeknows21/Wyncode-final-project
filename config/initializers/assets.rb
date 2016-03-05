@@ -12,3 +12,4 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( users.css )
 Rails.application.config.assets.precompile += %w( sessions.css )
 Rails.application.config.assets.precompile += %w( info.css )
+Rails.application.config.assets.precompile += %w( rooms.css )

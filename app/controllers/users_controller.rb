@@ -32,7 +32,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user, notice: 'Account was successfully created.'
+      redirect_to @user, notice: 'Account successfully created.'
     else
       render :new
     end
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
       if @user.update(user_params)
-        redirect_to @user, notice: 'User was successfully updated.'
+        redirect_to @user, notice: 'Information successfully updated.'
       else
         render :edit
       end
@@ -55,7 +55,7 @@ class UsersController < ApplicationController
     session[:user_id] = nil
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to '/', notice: 'Account was successfully deleted.' }
       format.json { head :no_content }
     end
   end
@@ -68,6 +68,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email, :password, :password_confirmation, :session_id, :allow_join, :token)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation, :session_id, :allow_join, :token, :repcode)
     end
 end

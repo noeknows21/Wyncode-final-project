@@ -1,4 +1,4 @@
-
+<%= stylesheet_link_tag params[:controller] %>
 
 
 <%= hidden_field_tag "foo_name", @session_id, { :id => "foo-name" }%>
@@ -7,7 +7,7 @@
 
 <div id="opentok_console"></div>
 <div id="links">
-  <input type="button" value="Join Room" id ="connectLink">
+  <input type="hidden" value="Join Room" id ="connectLink">
   <input type="button" value="Leave Room" id ="disconnectLink">
   <input type="button" value="Start Publishing" id ="publishLink">
   <input type="button" value="Stop Publishing" id ="unpublishLink">
@@ -16,4 +16,6 @@
 <div id="subscribers"></div>
 
 <br>
-<%= link_to 'Dashboard', current_user %>
+
+<p id="lol"></p>
+<br>

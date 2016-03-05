@@ -1,6 +1,32 @@
+<%= stylesheet_link_tag params[:controller] %>
 
+<h1 id="edit-title"> Editing Profile </h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+
+<a href='/users/<%=params[:id]%>'>
+<button type="button", id="back-to-dash">
+Back
+</button>
+</a>   
+
+
+<style>
+
+body  {
+      margin-left: 42vw;
+}
+
+* {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
+
+#aside-menu {
+  visibility: hidden;
+}
+
+</style>
+
+
+
