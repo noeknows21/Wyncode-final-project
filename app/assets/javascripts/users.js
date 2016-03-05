@@ -227,6 +227,6 @@ function ready() {
     msgHistory.append(msg.innerHTML);
   });
 
-  }
+  
 
 }
