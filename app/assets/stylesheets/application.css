@@ -91,12 +91,13 @@
    color: #000;
    cursor:url(http://orig10.deviantart.net/ae1f/f/2015/020/a/3/hearthstone_cursor_by_sonic4000-d8er4gl.png), auto;
    &:visited {
-     color: #666;
+     color: black;
    }
-
-   &:hover {
-     color: #fff;
-     background-color: #000;
+ }
+ 
+ .dash-links a, .myButton {
+   &:visited {
+     color: white;
    }
  }
 
@@ -131,9 +132,20 @@
 }
 
 
-	#lol ~ div {
+#lol ~ div, #publishLink, #subscribers div:first-child{
+  margin: auto;
+}
+
+#lol ~ div, #subscribers div:first-child{
+  border: black 5px;
+  border-style: inset;
+}
+
+#subscribers div:first-child{
   width: 500px !important;
   height: 500px !important;
+  position: relative;
+  top: 0.5em;
 }
 
 

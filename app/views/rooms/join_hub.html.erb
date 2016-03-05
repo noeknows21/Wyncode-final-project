@@ -1,9 +1,9 @@
 <%= stylesheet_link_tag params[:controller] %>
 
-<% if current_user.repcode != nil %>
+<% if current_user.repcode != "" %>
 
 <div class="rooms-font-div">
-<h3 id="etoe"> Employee-to-Employee Session </h3>
+<h3 class="join-hub-text"> Employee-to-Employee Session </h3>
 <%= form_tag '/rooms/join_hub' do %>
 
     <%= label_tag :enter_your_code, "Enter your code:"%>
@@ -16,16 +16,16 @@
 <%end%>
 
 
-<%if  current_user.repcode ==nil %>
+<%if  current_user.repcode == "" %>
   <%if User.where.not(session_id: nil).last %>
-    <h3> Available Representatives </h3>
+    <h3 class="join-hub-text"> Available Representatives </h3>
     <% @list2.each do |u| %>
-      <p><%= link_to (u.name) , ('/rooms/join_sesh/' + u.id.to_s) %> </p>
+      <p class="join-hub-text"><%= link_to (u.name) , ('/rooms/join_sesh/' + u.id.to_s) %> </p>
     <%end%>
     
   <%else%>
-    <h4> Sorry, no public sessions! <h4>
-    <%= link_to 'Create Session', ('/rooms/create_sesh/' + current_user.id.to_s)%> 
+    <h4 class="join-hub-text"> Sorry, no available sessions! <h4>
+    <!-- <%= link_to 'Create Session', ('/rooms/create_sesh/' + current_user.id.to_s), class:"join-hub-text"%>  -->
   <%end%>
 <%end%>
 
