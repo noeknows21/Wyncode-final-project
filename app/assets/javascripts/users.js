@@ -202,30 +202,30 @@ function ready() {
   //--------------------------------------
 
 
-  var form = $('.form')
-  var msgTxt = $('#msgTxt')
-  form.on('submit', function(event) {
-    event.preventDefault();
-    session.signal({
-        type: 'chat',
-        data: msgTxt.val()
-      },
-      function(error) {
-        if (!error) {
-          msgTxt.value = '';
-        }
-      }
-    );
-  });
-  
-  msgHistory = $("#history")
-  session.on('signal:chat', function(event) {
-    var msg = $('#history');
-    console.log(msg)
-    msg.innerHTML = event.data;
-    msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
-    msgHistory.append(msg.innerHTML);
-  });
+  // var form = $('.form')
+  // var msgTxt = $('#msgTxt')
+  // form.on('submit', function(event) {
+  //   event.preventDefault();
+  //   session.signal({
+  //       type: 'chat',
+  //       data: msgTxt.val()
+  //     },
+  //     function(error) {
+  //       if (!error) {
+  //         msgTxt.value = '';
+  //       }
+  //     }
+  //   );
+  // });
+  // 
+  // msgHistory = $("#history")
+  // session.on('signal:chat', function(event) {
+  //   var msg = $('#history');
+  //   console.log(msg)
+  //   msg.innerHTML = event.data;
+  //   msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
+  //   msgHistory.append(msg.innerHTML);
+  // });
   
 
 }
