@@ -136,7 +136,7 @@
   margin: auto;
 }
 
-#lol ~ div, #subscribers div:first-child{
+#lol ~ div, #subscribers div:nth-child(2){
   border: black 5px;
   border-style: inset;
 }
