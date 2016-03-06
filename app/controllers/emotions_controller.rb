@@ -50,7 +50,7 @@ class EmotionsController < ApplicationController
   def index
     # @file_path = params[:url]
     # @file_url = @file_path.split('?').first
-    file_url = "https://s3.amazonaws.com/pitchusers/45508312/a8745c9b-8220-4fb8-a680-aaebf81e2d4e/archive.zip"
+    file_url = "https://s3.amazonaws.com/pitchusers/45508312/0803f85d-c175-4db0-9c35-2c92fc1c8319/archive.zip"
     UnzipTokWorker.perform_async(file_url)
   end
 end
