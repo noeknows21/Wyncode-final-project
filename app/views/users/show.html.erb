@@ -1,10 +1,12 @@
 <%= stylesheet_link_tag params[:controller] %>
 
+<section id="top-header"></section>
+
 <p id="notice"><%= notice %></p>
 
-<svg viewBox="0 0 2600 300">
+<!-- <svg viewBox="0 0 2600 300">
 	<symbol id="s-text">
-		<text text-anchor="middle" x="50%" y="20%"><%=current_user.name%>'s Dashboard</text>
+		<text text-anchor="middle" x="50%" y="20%">Welcome <%=current_user.name%>!</text>
 	</symbol>
 
 	<g class = "g-ants">
@@ -14,18 +16,29 @@
 		<use xlink:href="#s-text" class="text-copy"></use>
 		<use xlink:href="#s-text" class="text-copy"></use>
 	</g>
-</svg>
+</svg> -->
 
-<div class="dash-links">
+<h1 class="welcome-title">Welcome <%=current_user.name%>!</h2>
+
+<div class="all-btns">
 <% if current_user.repcode != "" %>
-	<a href='/rooms/create_hub', class="myButton"> Create Session </a>
+	<a href='/rooms/create_hub', class="create-btn">CREATE SESSION</a>
+<br>
+<br>
+<br>
+<br>
 <%end%>
 <br> <br>
-<a href='/rooms/join_hub', class="myButton"> Find Session </a>
+<a href='/rooms/join_hub', class="find-btn">FIND SESSION</a>
+<br>
+<br>
+<br>
+<br>
+<a href='/users/<%=@user.id%>/edit', class="edit-btn">EDIT PROFILE</a>
 <br> <br>
-<a href='/users/<%=@user.id%>/edit', class="myButton"> Edit Profile</a>
-<br> <br>
-<%= button_to 'Delete account', @user, method: :delete, data: { confirm: 'Are you sure?' }, class: "myButton", id:"delete-acct"%> 
+<div id="delete-btn-id">
+<%= button_to 'DELETE ACCOUNT', @user, method: :delete, data: { confirm: 'Are you sure?' }, class: "delete-btn", id:"delete-acct"%>
+</div>
 </div>
 
-
+<section id="bottom-footer"></section>

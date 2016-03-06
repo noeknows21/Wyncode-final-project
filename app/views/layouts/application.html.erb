@@ -18,6 +18,7 @@
 <body>
 
 
+
   <% if current_user && params[:action] != "new" && params[:controller] != "info"%>
     <aside id="aside-menu">
       <p id="hello-user"> Hello <%= current_user.name %>
@@ -35,6 +36,8 @@
 
 
 <%= yield %>
+
+
 
 </body>
 </html>
