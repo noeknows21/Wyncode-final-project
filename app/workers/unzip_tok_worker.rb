@@ -1,6 +1,6 @@
 class UnzipTokWorker
   include Sidekiq::Worker
-  def perform_async(file_url)
+  def perform(file_url)
     # do something
     # Setup AWS credentials
     p "TEST 1 TEST 1 TEST 1"
