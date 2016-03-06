@@ -64722,3 +64722,684 @@ Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bb
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:34:01 -0500
+
+
+Started GET "/rooms/join_hub" for ::1 at 2016-03-05 21:35:37 -0500
+Processing by RoomsController#join_hub as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE ("users"."session_id" IS NOT NULL)  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE ("users"."session_id" IS NOT NULL)  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."session_id" IS NOT NULL)
+  Rendered rooms/join_hub.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 48ms (Views: 45.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:35:49 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/edit.html.erb within layouts/application (7.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/5" for ::1 at 2016-03-05 21:37:00 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/assets/users.self-43def7efd093c598acdb96c555b0af6fc58daea23bdd406a574e66fcfbd7270a.css?body=1" for ::1 at 2016-03-05 21:37:01 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:37:02 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (1.6ms)
+  Rendered users/edit.html.erb within layouts/application (7.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:48:21 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/edit.html.erb within layouts/application (76.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 513ms (Views: 511.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/users.self-43def7efd093c598acdb96c555b0af6fc58daea23bdd406a574e66fcfbd7270a.css?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:48:22 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:49:43 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/edit.html.erb within layouts/application (269.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 417ms (Views: 415.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/users.self-e112025b4767d9fb4ce9f2cfba275762f21298a67be06e5ff6e8f62bd17bcba8.css?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:49:44 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:49:50 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/edit.html.erb within layouts/application (1190.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 1383ms (Views: 1381.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.self-560f4b1006285f8ee8b7f67871e3a08a54b2e6e4a54405d5756c7a3155ba48b1.css?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:49:52 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:51:05 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/edit.html.erb within layouts/application (28.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 177ms (Views: 175.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/users.self-560f4b1006285f8ee8b7f67871e3a08a54b2e6e4a54405d5756c7a3155ba48b1.css?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:51:06 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:52:09 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/edit.html.erb within layouts/application (251.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 419ms (Views: 417.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.self-c50b8ad8b00d090998a9717af77c87e5e81cb4d2c26c4762339d8eece636f039.css?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:52:09 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:52:18 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/edit.html.erb within layouts/application (179.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 236ms (Views: 234.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/users.self-72da496655d09b79003f8f95130fa01862bc44a76e11d92776eed13c05467455.css?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:52:18 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:53:03 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (1.9ms)
+  Rendered users/edit.html.erb within layouts/application (216.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 413ms (Views: 411.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.self-04b858361b3b8a677bc0b2e3104fefd9261d6f0c358c084af357d4b2d7642b6f.css?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:53:03 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:53:09 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (1.9ms)
+  Rendered users/edit.html.erb within layouts/application (173.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 198ms (Views: 196.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.self-7dc25ea2dbb100c0ae051c5d626058c5e371424180b0cc94b4dc0bc947c64b5f.css?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:53:09 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:53:10 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:53:10 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:53:13 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/edit.html.erb within layouts/application (228.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 254ms (Views: 252.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:53:13 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:53:13 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:53:13 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:53:13 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:53:13 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:53:14 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:53:14 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:53:14 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:53:14 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:53:14 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:53:14 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:53:14 -0500
+
+
+Started GET "/assets/users.self-7dc25ea2dbb100c0ae051c5d626058c5e371424180b0cc94b4dc0bc947c64b5f.css?body=1" for ::1 at 2016-03-05 21:53:14 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:53:50 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/edit.html.erb within layouts/application (60.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 286ms (Views: 284.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:53:50 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:53:50 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:53:50 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:53:50 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:53:50 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:53:50 -0500
+
+
+Started GET "/assets/users.self-7dc25ea2dbb100c0ae051c5d626058c5e371424180b0cc94b4dc0bc947c64b5f.css?body=1" for ::1 at 2016-03-05 21:53:50 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:53:50 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:53:51 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:53:51 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:53:51 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:53:51 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:54:33 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/edit.html.erb within layouts/application (187.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 241ms (Views: 238.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/users.self-f58e5c381c65909f1bdf50660d837ba753a7a34ad5e0c2c3650dc9d3a1988f13.css?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:54:33 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:55:36 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/edit.html.erb within layouts/application (205.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 344ms (Views: 341.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/users.self-71241fe8ffc72bcbbcc99c165d9d14eba6c7ca1c7b53600fe6b22491406dfc2e.css?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:55:37 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 21:55:49 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.1ms)
+  Rendered users/edit.html.erb within layouts/application (144.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 168ms (Views: 166.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.self-0a794fa015da7e5e2adcac31e43a9036eb077a1d8598857c26344ae11f698b0f.css?body=1" for ::1 at 2016-03-05 21:55:49 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/application.self-8f19ddd84fdc23249313565e28252989df151197e41f6c20be221b2e91914ad5.css?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 21:55:50 -0500
