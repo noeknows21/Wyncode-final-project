@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get 'info/about_tech'
   get 'emotions/graph'
   get 'emotions/mp4_created'
-  post 'emotions/mp4_created'
+  post 'emotions/mp4_created' => 'emotions#mp4_created'
 
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
