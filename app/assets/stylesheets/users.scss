@@ -51,16 +51,18 @@
   margin-top: 25px;
   text-align: center;
 }
-
+.field input{
+  font-size: 15px;
+}
 .text-center {
   text-align: center;
 }
 
 .actions input{
   border-radius: 5px;
-  padding: 13px 10px;
+  padding: 8px 0px;
   width: 230px;
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
   background-color: black;
   text-decoration: none;
@@ -76,9 +78,9 @@
 
 #back-to-login, #back-to-dash {
   border-radius: 5px;
-  padding: 13px 10px;
+  padding: 8px 0px;
   width: 230px;
-  font-size: 20px;
+  font-size: 15px;
   position: relative;
   top: 0.5em;
   color: #fff;
@@ -176,7 +178,7 @@ svg {
 
 #bottom-footer {
 background-color: #2b2b2b;
-height: 130px;
+height: 10px;
 width: 100%;
 margin-top: 175px;
 position: relative;;
