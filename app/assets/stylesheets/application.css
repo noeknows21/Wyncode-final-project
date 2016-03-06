@@ -137,17 +137,19 @@
 
  #options {
    border-radius: 5px;
-   background-color:  #ccffff;
+   /*background-color:  #ccffff;*/
    font-family: 'Arvo', serif !important;
    font-size: 0.9em;
-   left: 6.5em;
-   bottom: 0.5em;
+   left: 4.5em;
+   top: 1.5em;
+   bottom: 1.5em;
    position: relative;
    height: 2.5em;
+   color: white;
  }
 
  #options:hover {
-     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     /*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
  }
 
 #aside-menu {
