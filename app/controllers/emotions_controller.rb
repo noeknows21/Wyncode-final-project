@@ -45,7 +45,7 @@ class EmotionsController < ApplicationController
   end
 
   def mp4_created
-
+    @receive_mp4 = params
   end
 
   def index
