@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   post '/rooms/join_hub' => 'rooms#check_code'
   get '/emotions/display'
   get 'emotions/index'
+  post 'emotions/index'
   get 'info/about_tech'
   get '/emotions/graph'
 

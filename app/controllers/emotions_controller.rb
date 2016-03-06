@@ -1,4 +1,5 @@
 class EmotionsController < ApplicationController
+  skip_before_filter :verify_authenticity_token
 
   def graph
 
@@ -46,24 +47,18 @@ class EmotionsController < ApplicationController
   def display
   end
 
+  def mp4_created
+
+  end
+
   def index
-    @file_path = params[:url]
-    @file_url = @file_path.split('?').first
-    # @file_url = "https://s3.amazonaws.com/tokbox.com.archive2/45508312%2Ff75dcfdf-26c3-4ce8-848d-78f7186aa6a8%2Farchive.zip"
-
-    # unzip file
-    @response = RestClient::Request.execute({:url => @file_url, :method => :get, :content_type => 'application/zip'})
-    Zip::File.open_buffer(@response) do |zip_file|
-      zip_file.each do |entry|
-
-        # Setup AWS credentials
-        AWS.config(access_key_id: ENV['S3_KEY'], secret_access_key: ENV['S3_SECRET'])
-
-        # Upload a file.
-        s3 = AWS::S3.new
-        s3.buckets[ENV['S3_BUCKET']].objects["#{entry.name}"].write(entry.get_input_stream.read)
-
-      end
+    file_path = params[:url]
+    if file_path != nil
+      file_url = file_path.split('?').first
+      # file_url = "https://s3.amazonaws.com/pitchusers/45508312/0803f85d-c175-4db0-9c35-2c92fc1c8319/archive.zip"
+      UnzipTokWorker.perform_async(file_url)
+    else
+      p "STATUS UPDATE #{params[:status]}"
     end
   end
 end
