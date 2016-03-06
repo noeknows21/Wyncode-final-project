@@ -66508,3 +66508,34 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/users.self-8b7e0b9e76353787ffa009ae8405f7cc6dada1e0327df4eafcda83ee75411d9f.css?body=1" for ::1 at 2016-03-05 22:15:52 -0500
+
+
+Started GET "/users/5/edit" for ::1 at 2016-03-05 22:16:18 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/edit.html.erb within layouts/application (7.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Completed 200 OK in 457ms (Views: 455.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/5" for ::1 at 2016-03-05 22:16:32 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 318ms (Views: 314.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rooms/join_hub" for ::1 at 2016-03-05 22:16:37 -0500
+Processing by RoomsController#join_hub as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE ("users"."session_id" IS NOT NULL)  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE ("users"."session_id" IS NOT NULL)  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."session_id" IS NOT NULL)
+  Rendered rooms/join_hub.html.erb within layouts/application (82.8ms)
+Completed 200 OK in 168ms (Views: 164.6ms | ActiveRecord: 1.4ms)
