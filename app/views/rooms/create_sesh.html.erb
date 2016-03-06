@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag params[:controller] %>
 
-<!-- <section id="top-header"></section> -->
+<section id="top-header"></section>
 
 <%= hidden_field_tag "foo_name", @session_id, { :id => "foo-name" }%>
 <%= hidden_field_tag "token", @token, { :id => "token" }%>
@@ -12,7 +12,7 @@
 <ul class="list-unstyled">
   <li><input type="hidden" value="JOIN ROOM" id="connectLink"></li>
   <li><input type="button" value="LEAVE ROOM" id="disconnectLink"></li>
-  <li><input type="button" value="START PUBLISHING" id="publishLink"></li>
+  <li><input type="button" value="START PUBLISHING" id="publishLink" class="start-publishing"></li>
   <li><input type="button" value="STOP PUBLISHING" id="unpublishLink"></li>
 </ul>
 </div>
@@ -31,4 +31,4 @@
 <p id="lol"></p>
 <br>
 
-<!-- <section id="bottom-footer"></section> -->
+<section id="bottom-footer"></section>

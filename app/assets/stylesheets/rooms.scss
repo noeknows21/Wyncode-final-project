@@ -30,6 +30,7 @@ font-size: 40px;
   font-size: 2em;
 }
 
+
 // form > input {
 //   font-size: 1em;
 // }
@@ -69,6 +70,8 @@ font-size: 40px;
 //   font-family: 'Cinzel', serif;
 // }
 
+
+
 #connectLink, #disconnectLink, #publishLink, #unpublishLink {
   border-radius: 5px;
   padding: 8px 0px;
@@ -99,6 +102,11 @@ font-size: 40px;
   border: black;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.start-publishing{
+  left: 485px;
+}
+
 
 //
 // .employee-btns {
@@ -147,7 +155,6 @@ font-size: 40px;
 
 
 
-
 /**********************************
  TOP HEADER
 ***********************************/
@@ -181,7 +188,7 @@ font-size: 40px;
 background-color: #2b2b2b;
 height: 140px;
 width: 100%;
-margin-top: 270px;
+margin-top: 290px;
 position: static;
 }
 
