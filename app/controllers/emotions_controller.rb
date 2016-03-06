@@ -44,9 +44,9 @@ class EmotionsController < ApplicationController
   end
 
   def index
-    # @file_path = params[:url]
-    # @file_url = @file_path.split('?').first
-    @file_url = "https://s3.amazonaws.com/tokbox.com.archive2/45508312%2Ff75dcfdf-26c3-4ce8-848d-78f7186aa6a8%2Farchive.zip"
+    @file_path = params[:url]
+    @file_url = @file_path.split('?').first
+    # @file_url = "https://s3.amazonaws.com/tokbox.com.archive2/45508312%2Ff75dcfdf-26c3-4ce8-848d-78f7186aa6a8%2Farchive.zip"
 
     # unzip file
     @response = RestClient::Request.execute({:url => @file_url, :method => :get, :content_type => 'application/zip'})
