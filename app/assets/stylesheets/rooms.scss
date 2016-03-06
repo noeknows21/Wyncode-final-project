@@ -30,45 +30,65 @@ font-size: 40px;
   font-size: 2em;
 }
 
-form > input {
-  font-size: 1em;
+// form > input {
+//   font-size: 1em;
+// }
+//
+// form label {
+//   font-size: 1.7em;
+// }
+//
+// form input:nth-child(4){
+//   position: relative;
+//   bottom:0.1em;
+//   left:0.2em;
+//   margin-right: 0.25em;
+// }
+//
+// form input:last-child {
+//   width: 4em;
+//   height:1.75em;
+// }
+//
+// input {
+//   border-radius: 6px;
+//   font-size: 1.5em;
+//   height: 1.5em;
+//   width:13em;
+//   background-color: white;
+//   font-family: 'Cinzel', serif;
+// }
+
+// .secret-code {
+//   font-family: 'Cinzel', serif;
+//   font-size: 1.25em;
+//   text-align: center;
+// }
+
+// .rooms-font-div * {
+//   font-family: 'Cinzel', serif;
+// }
+
+ input #connectlink, #disconnectlink, #publishlink, #unpublishlink {
+border-radius: 5px;
+padding: 8px 0px;
+width: 230px;
+font-size: 15px;
+position: relative;
+top: 0.5em;
+color: #fff;
+background-color: black;
+text-decoration: none;
+-webkit-transition-duration: 0.2s;
+border: black;
+text-align: center;
 }
 
-form label {
-  font-size: 1.7em;
+#connectlink:hover, #disconnectlink:hover, #publishlink:hover, #unpublishlink:hover {
+  color: #3face2;
+  border: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-form input:nth-child(4){
-  position: relative;
-  bottom:0.1em;
-  left:0.2em;
-  margin-right: 0.25em;
-}
-
-form input:last-child {
-  width: 4em;
-  height:1.75em;
-}
-
-input {
-  border-radius: 6px;
-  font-size: 1.5em;
-  height: 1.5em;
-  width:13em;
-  background-color: white;
-  font-family: 'Cinzel', serif;
-}
-
-.secret-code {
-  font-family: 'Cinzel', serif;
-  font-size: 1.25em;
-  text-align: center;
-}
-
-.rooms-font-div * {
-  font-family: 'Cinzel', serif;
-}
-
 
 /**********************************
  TOP HEADER
@@ -92,5 +112,5 @@ input {
 background-color: #2b2b2b;
 height: 140px;
 width: 100%;
-margin-top: 360px;
+margin-top: 390px;
 }

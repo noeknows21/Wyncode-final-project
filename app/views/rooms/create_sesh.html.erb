@@ -1,6 +1,11 @@
 <%= stylesheet_link_tag params[:controller] %>
+
+<!-- <section id="top-header"></section> -->
+
 <%= hidden_field_tag "foo_name", @session_id, { :id => "foo-name" }%>
 <%= hidden_field_tag "token", @token, { :id => "token" }%>
+
+
 
 <div id="opentok_console"></div>
 <div id="links">
@@ -23,3 +28,5 @@
 
 <p id="lol"></p>
 <br>
+
+<!-- <section id="bottom-footer"></section> -->
