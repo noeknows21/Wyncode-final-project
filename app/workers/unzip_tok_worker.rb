@@ -1,6 +1,6 @@
 class UnzipTokWorker
   include Sidekiq::Worker
-  def perform(file_url)
+  def perform_async(file_url)
     # do something
     # Setup AWS credentials
     AWS.config(access_key_id: ENV['S3_KEY'], secret_access_key: ENV['S3_SECRET'])
