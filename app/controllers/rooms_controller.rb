@@ -33,7 +33,7 @@ class RoomsController < ApplicationController
       @session_id = chosen_user.session_id
       @token = chosen_user.token
       
-      HTTParty.post('https://api.opentok.com/v2/partner/45508312/archive',
+      @archive_response = HTTParty.post('https://api.opentok.com/v2/partner/45508312/archive',
       { :body => { "sessionId" => "#{@session_id}", "hasAudio" => true, "hasVideo" => true, "name" => "#{current_user.name}", "outputMode" => "individual"}.to_json,
       :headers => { 'Content-Type' => 'application/json', 'X-TB-PARTNER-AUTH' => '45508312:8face9e9bb645dd756bd1def75b786bbad83ea75'}})  
 
