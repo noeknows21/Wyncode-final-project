@@ -58725,3 +58725,46 @@ Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bb
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 18:59:19 -0500
+
+
+Started GET "/users/new" for ::1 at 2016-03-05 19:01:20 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a3c8217828aeab8ff36ea70ba251d2df43b610164f076632fb00a1696dc43b25.css?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/users.self-4c50e45251de77e94bf65d6f549b29bba390212477a0f3ef0891b39a75c9b0de.css?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/emotions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/info.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/main_page.self-de2a5939909e43561fb65081842e3543669a7ec90c838d5df7454f68846c4e03.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/rooms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/users.self-cbac358fdea61bf2486daf55a6dd2701cbd5421241b808bba9ce6e63830204aa.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-05 19:01:20 -0500
