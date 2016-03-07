@@ -51,6 +51,7 @@ class EmotionsController < ApplicationController
   def mp4_created
     @receive_mp4 = params[:key]
     p @receive_mp4
+    User.all.order(updated_at: :desc).first.videos.create(url: @receive_mp4)
   end
 
   def index
