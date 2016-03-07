@@ -49,18 +49,14 @@ class EmotionsController < ApplicationController
   end
 
   def mp4_created
+    
     @receive_mp4 = params[:key]
     p @receive_mp4
     
     if @receive_mp4.start_with?('http')
-      @@postcount = 1
-    else 
-      @@postcount +=1
-    end
-    
-    if @@postcount % 3 == 2
+    else
       @formatted_mp4 = "https://s3.amazonaws.com/pitchusers/" + @receive_mp4
-      User.all.order(updated_at: :desc).first.videos.create(url: @receive_mp4)
+      User.all.order(updated_at: :desc).first.videos.create(url: @formatted_mp4)
     end
   end
 
