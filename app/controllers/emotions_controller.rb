@@ -45,7 +45,7 @@ class EmotionsController < ApplicationController
   end
 
   def display
-    @all_videos = current_user.videos
+    @current_user_videos = current_user.videos
   end
 
   def mp4_created
