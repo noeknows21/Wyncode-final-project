@@ -1,7 +1,5 @@
 class EmotionsController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  
-  @@post_count = 0
 
   def graph
 
@@ -51,9 +49,15 @@ class EmotionsController < ApplicationController
   end
 
   def mp4_created
-    @@post_count += 1
     @receive_mp4 = params[:key]
     p @receive_mp4
+    
+    if @receive_mp4.start_with?('http')
+      @@postcount = 1
+    else 
+      @@postcount +=1
+    end
+    
     if @@postcount % 3 == 2
       @formatted_mp4 = "https://s3.amazonaws.com/pitchusers/" + @receive_mp4
       User.all.order(updated_at: :desc).first.videos.create(url: @receive_mp4)
