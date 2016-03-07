@@ -8,14 +8,14 @@
 
 
 
-<!-- <a class="myButton" href="<%= '/rooms/create_sesh/' + @needed_id.to_s%>">Customer-to-Employee</a> -->
-<!-- <a class="myButton" href="<%= '/rooms/create_private/' + $session.session_id.to_s%>">Employee-to-Employee</a> -->
+<!-- <a class="myButton" href="<%#= '/rooms/create_sesh/' + @needed_id.to_s%>">Customer-to-Employee</a> -->
+<!-- <a class="myButton" href="<%#= '/rooms/create_private/' + $session.session_id.to_s%>">Employee-to-Employee</a> -->
 
 
 <div class="employee-btns">
   <ul class="list-unstyled">
     <li><a class="create_sesh_btn" href="<%= '/rooms/create_sesh/' + @needed_id.to_s%>">CUSTOMER / EMPLOYEE</a></li><br><br>
-    <li><a class="create_sesh_btn2" href="<%= '/rooms/create_private/' + @session.session_id.to_s%>">EMPLOYEE / EMPLOYEE</a></li>
+    <li><a class="create_sesh_btn2" href="<%= '/rooms/create_private/' + $session.session_id.to_s%>">EMPLOYEE / EMPLOYEE</a></li>
   </ul>
 </div>
 
