@@ -1,5 +1,4 @@
 <h2> <%=current_user.name%>'s Video Logs </h2>
   <% @all_videos.each do |v| %>
-    <a href='<%=v.url%>'> <%= "View your video chat with" + v.customer %> </a> 
-    <a href="#"> Run your this video through emotion tracking </a><br>
+    <a href='<%=v.url%>'> <%= "View your video chat with" + v.customer %> </a> <a href="#"> <%= "emotion track" %> </a><br>
   <%end%>
