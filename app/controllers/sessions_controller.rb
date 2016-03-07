@@ -23,9 +23,9 @@ class SessionsController < ApplicationController
   end
   
   def new
-    # if current_user
-    #   redirect_to current_user
-    # end
+    if current_user
+      redirect_to current_user
+    end
   end
 
 end
