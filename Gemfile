@@ -50,7 +50,10 @@ group :development do
   gem 'spring'
 end
 
-  gem 'hirb'
-  gem 'paperclip'
-  gem 'aws-sdk', '< 2'
-  gem 'dotenv-rails'
+gem 'hirb'
+gem 'paperclip'
+gem 'aws-sdk', '< 2'
+gem 'dotenv-rails'
+gem "rubyzip", :require => 'zip'
+gem 'rest-client', '~> 1.8'
+gem 'sidekiq'

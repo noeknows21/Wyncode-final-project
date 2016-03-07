@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  
+
   ### before_action :authorize, except: [:new, :create]
 
 
@@ -37,7 +37,7 @@ class UsersController < ApplicationController
       render :new
     end
   end
-  
+
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json

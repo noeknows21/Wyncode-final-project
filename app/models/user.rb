@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  
+  has_many :videos, dependent: :destroy
   has_secure_password
   # validates :name, :email, presence: true, length: {maximum: 75}
   # validates :email, uniqueness: { case_sensitive: false },

@@ -221,10 +221,10 @@ button #options {
   margin: auto;
 }
 
-#lol ~ div, #subscribers div:first-child{
+/*#lol ~ div {
   border: black 5px;
   border-style: inset;
-}
+}*/
 
 #subscribers div:first-child{
   width: 500px !important;

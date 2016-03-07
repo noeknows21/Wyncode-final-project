@@ -1,7 +1,6 @@
 $(document).on('ready page:load', ready);
 function ready() {
 
-
   $('#hello-user').hide();
   $('#menu-logout').hide();
   $('#exit-demo').hide();
@@ -29,11 +28,10 @@ function ready() {
     $('#options').show();
   });
 
-
-
   var apiKey = 45508312; // Replace with your API key. See https://dashboard.tokbox.com/projects
   var sessionId = $('#foo-name').val(); // Replace with your own session ID. See https://dashboard.tokbox.com/projects
   var token = $('#token').val();  // Replace with a generated token. See https://dashboard.tokbox.com/projects
+
 
   var session;
   var publisher;
@@ -192,41 +190,42 @@ function ready() {
     disconnect();
   });
 
+  if (document.getElementById('connectLink') !== null) {
   show ('connectLink');
   connect();
   hide('disconnectLink');
   hide('connectLink');
-
+}
   //--------------------------------------
   //  OPENTOK TEXT CHAT
   //--------------------------------------
 
 
-  var form = $('.form')
-  var msgTxt = $('#msgTxt')
-  form.on('submit', function(event) {
-    event.preventDefault();
-    session.signal({
-        type: 'chat',
-        data: msgTxt.val()
-      },
-      function(error) {
-        if (!error) {
-          msgTxt.value = '';
-        }
-      }
-    );
-  });
 
-  msgHistory = $("#history")
-  session.on('signal:chat', function(event) {
-    var msg = $('#history');
-    console.log(msg)
-    msg.innerHTML = event.data;
-    msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
-    msgHistory.append(msg.innerHTML);
-  });
 
-  
+  // var form = $('.form')
+  // var msgTxt = $('#msgTxt')
+  // form.on('submit', function(event) {
+  //   event.preventDefault();
+  //   session.signal({
+  //       type: 'chat',
+  //       data: msgTxt.val()
+  //     },
+  //     function(error) {
+  //       if (!error) {
+  //         msgTxt.value = '';
+  //       }
+  //     }
+  //   );
+  // });
+  //
+  // msgHistory = $("#history")
+  // session.on('signal:chat', function(event) {
+  //   var msg = $('#history');
+  //   console.log(msg)
+  //   msg.innerHTML = event.data;
+  //   msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
+  //   msgHistory.append(msg.innerHTML);
+  // });
 
 }

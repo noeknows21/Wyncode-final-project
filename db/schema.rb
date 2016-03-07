@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160229225328) do
+ActiveRecord::Schema.define(version: 20160307002057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,9 +23,19 @@ ActiveRecord::Schema.define(version: 20160229225328) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.string   "session_id"
-    t.boolean  "allow_join"
     t.string   "token"
     t.string   "repcode"
   end
 
+  create_table "videos", force: :cascade do |t|
+    t.string   "url"
+    t.string   "customer"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "videos", ["user_id"], name: "index_videos_on_user_id", using: :btree
+
+  add_foreign_key "videos", "users"
 end
