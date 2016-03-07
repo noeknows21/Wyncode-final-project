@@ -190,12 +190,12 @@ function ready() {
     disconnect();
   });
   
-  if (document.getElementById('connectLink') !== null) {
+  // if (document.getElementById('connectLink') !== null) {
   show ('connectLink');
   connect();
   hide('disconnectLink');
   hide('connectLink');
-}
+// }
   //--------------------------------------
   //  OPENTOK TEXT CHAT
   //--------------------------------------
