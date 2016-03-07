@@ -53,8 +53,7 @@ class EmotionsController < ApplicationController
     @receive_mp4 = params[:key]
     p @receive_mp4
     
-    if @receive_mp4.start_with?('http')
-    else
+    if @receive_mp4.include?('-1457392959457')
       @formatted_mp4 = "https://s3.amazonaws.com/pitchusers/" + @receive_mp4
       User.all.order(updated_at: :desc).first.videos.create(url: @formatted_mp4)
     end
