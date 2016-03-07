@@ -168,7 +168,7 @@ function ready() {
   function show(id) {
     document.getElementById(id).style.display = 'block';
   }
-  
+
   function hide(id) {
     document.getElementById(id).style.display = 'none';
   }
@@ -189,7 +189,7 @@ function ready() {
   $('#disconnectLink').click(function() {
     disconnect();
   });
-  
+
   if (document.getElementById('connectLink') !== null) {
   show ('connectLink');
   connect();
@@ -199,6 +199,8 @@ function ready() {
   //--------------------------------------
   //  OPENTOK TEXT CHAT
   //--------------------------------------
+
+
 
 
   // var form = $('.form')
@@ -225,4 +227,5 @@ function ready() {
   //   msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
   //   msgHistory.append(msg.innerHTML);
   // });
+
 }

@@ -3,16 +3,29 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /* The animation code */
 
+.welcome-title {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 50px;
+}
+
+#edit-title {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 50px;
+}
+
+
 .dash-links {
   text-align: center;
 }
 
-#delete-acct {
-  width:23.25em;
-  right:0.1em;
-  position: relative;
-  	// background:linear-gradient(to bottom, white 5%, red 100%);
-}
+// #delete-acct {
+//   width:23.25em;
+//   right:0.1em;
+//   position: relative;
+//   	// background:linear-gradient(to bottom, white 5%, red 100%);
+// }
 
 
 #edit-title {
@@ -39,55 +52,96 @@
 
 
 #signup {
-  font-size: 3em;
+  font-family: 'Fredoka One', cursive;
+  font-size: 60px;
   position: relative;
-  left: 0.65em;
+  text-align: center;
 }
 
+.field {
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  text-align: center;
+}
 .field input {
-  font-size: 1.5em;
+  font-size: 15px;
 }
 
-.field label {
-  font-size: 1.5em;
+.text-center {
+  text-align: center;
+}
+
+.text-center-edit {
+  text-align: center;
 }
 
 .actions input{
-  border-radius: 7px;
-  height:1.5em;
-  width: 11.3em;
-  font-size: 1.5em;
-  // background-color: #3face2;
-  // background-color: #99ddff;
-  background-color: white;
+  border-radius: 5px;
+  padding: 8px 0px;
+  width: 230px;
+  font-size: 15px;
+  color: #fff;
+  background-color: black;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+  border: black;
+  text-align: center;
+}
+
+.actions input:hover {
+  color: #3face2;
+  border: black;
 }
 
 #back-to-login, #back-to-dash {
-  border-radius: 7px;
-  height:1.5em;
-  width: 11.3em;
-  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 8px 0px;
+  width: 230px;
+  font-size: 15px;
   position: relative;
   top: 0.5em;
-  // background-color: #3face2;
-    // background-color: #99ddff;
-    background-color: white;
+  color: #fff;
+  background-color: black;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+  border: black;
+
 }
-  
-#back-to-login:hover, .actions input:hover, #back-to-dash:hover {
+
+#back-to-login {
+  margin-bottom: 100px;
+}
+
+#back-to-dash {
+  margin-left: 515px;
+  margin-top: 15px;
+}
+
+#back-to-login:hover, #back-to-dash:hover {
+  color: #3face2;
+  border: black;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-  
-  
+
+.back-btn {
+  text-align: center;
+}
+
+.actions input:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
-svg {
-    // display: block;
-    font: 5rem 'Montserrat';
-    // margin: 0 auto;
-}
+// svg {
+//     // display: block;
+//     font: 5rem 'Montserrat';
+//     // margin: 0 auto;
+// }
 
 .text-copy {
     fill: none;
@@ -127,3 +181,29 @@ svg {
 	100% {stroke-dashoffset: -35%;}
 }
 
+
+/**********************************
+ TOP HEADER
+***********************************/
+
+#top-header {
+  background-color: #2b2b2b;
+  margin: -15px 0 0 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  height: 90px;
+
+}
+
+
+/**********************************
+ BOTTOM FOOTER
+***********************************/
+
+#bottom-footer {
+background-color: #2b2b2b;
+height: 130px;
+width: 100%;
+margin-top: 160px;
+
+}

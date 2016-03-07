@@ -1,8 +1,13 @@
 <%= stylesheet_link_tag params[:controller] %>
 
+<section id="top-header"></section>
+
+
+
 <p id="alert1"> <%= notice %> </p>
 
-<h1 id="login">Login</h1>
+<h1 id="login">Login / Create Account</h1>
+
 
 <div id="sessions-form">
 
@@ -19,15 +24,23 @@
 
     <br>
 
-    <%= submit_tag "Submit", class:"submit-input" %>
+
+    <%= submit_tag "SUBMIT", class:"submit-input" %>
+
+
+
 
     <br>
 
     <a href="/users/new">
     <button type="button", id="signup-link">
-    Create Account
+    CREATE ACCOUNT
     </button>
     </a>
 
 <% end %>
 </div>
+
+
+
+<section id="bottom-footer"></section>

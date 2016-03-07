@@ -1,32 +1,37 @@
 <%= stylesheet_link_tag params[:controller] %>
 
+<section id="top-header"></section>
+
+
 <h1 id="edit-title"> Editing Profile </h1>
 
+<div class="text-center-edit">
 <%= render 'form' %>
+</div>
 
 
-<a href='/users/<%=params[:id]%>'>
-<button type="button", id="back-to-dash">
-Back
-</button>
-</a>   
+<!-- <div id="back-to-dash-btn"> -->
+  <a href='/users/<%=params[:id]%>'>
+    <button type="button", id="back-to-dash">
+      BACK
+    </button>
+  </a>
+<!-- </div> -->
 
+<section id="bottom-footer"></section>
 
 <style>
 
-body  {
+/*body  {
       margin-left: 42vw;
-}
+}*/
 
-* {
+/** {
   font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
-}
+}*/
 
 #aside-menu {
   visibility: hidden;
 }
 
 </style>
-
-
-

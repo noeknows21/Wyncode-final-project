@@ -12,8 +12,8 @@
  *
  *= require_self
  */
- 
- .myButton {
+
+ /*.myButton {
  	-moz-box-shadow: 0px 10px 14px -7px #276873;
  	-webkit-box-shadow: 0px 10px 14px -7px #276873;
  	box-shadow: 0px 10px 14px -7px #276873;
@@ -52,53 +52,138 @@
  .myButton:active {
  	position:relative;
  	top:1px;
+ }*/
+
+ /**********************************
+  SHOW PAGE BUTTONS / USERS
+ ***********************************/
+
+ .all-btns {
+   text-align: center;
  }
 
- 
+ .create-btn {
+   background-color: black;
+   border: 2px solid black;
+   border-radius: 5px;
+   font-size: 15px;
+   padding: 8px 65px;
+   width: 230px;
+   text-decoration: none;
+   position:relative;
+   margin-top: 20px;
+   -webkit-transition-duration: 0.2s;
+   color: #fff;
+ }
+
+ .find-btn {
+   background-color: black;
+   border: 2px solid black;
+   border-radius: 5px;
+   font-size: 15px;
+   padding: 8px 65px;
+   width: 230px;
+   text-decoration: none;
+   position:relative;
+   margin-top: 20px;
+   -webkit-transition-duration: 0.2s;
+   color: #fff;
+   margin-bottom: 50px;
+ }
+
+ .edit-btn {
+   background-color: black;
+   border: 2px solid black;
+   border-radius: 5px;
+   font-size: 15px;
+   padding: 8px 65px;
+   width: 230px;
+   text-decoration: none;
+   position:relative;
+   margin-top: 20px;
+   -webkit-transition-duration: 0.2s;
+   color: #fff;
+ }
+ .edit-btn:hover, .find-btn:hover, .create-btn:hover, .delete-btn:hover {
+   color: #3face2;
+   border: black;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+ .delete-btn {
+   background-color: black;
+   border: 2px solid black;
+   border-radius: 5px;
+   font-size: 15px;
+   padding: 8px 0px;
+   width: 230px;
+   text-decoration: none;
+   position:relative;
+   margin-top: 20px;
+   -webkit-transition-duration: 0.2s;
+   color: #fff;
+ }
+ /**********************************
+
+ ***********************************/
+
+
+
  body  {
-     background-image: url('https://images.unsplash.com/photo-1430609098125-581618d0482f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9fe2ffe3b97c96c4c2dd690dcfcff4e1');
+     /*background-image: url('https://images.unsplash.com/photo-1430609098125-581618d0482f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9fe2ffe3b97c96c4c2dd690dcfcff4e1');*/
      background-size: cover;
      background-repeat: no-repeat;
  }
- 
+
+button #options {
+  text-align: right;
+}
+
  #options {
    border-radius: 5px;
-   background-color:  #ccffff;
+   background-color: transparent;
    font-family: 'Arvo', serif !important;
    font-size: 0.9em;
-   left: 6.5em;
-   bottom: 0.5em;
-   position: relative;
+   left: 80.0em;
+   top: 1.5em;
+   bottom: 1.5em;
+   position: fixed;
    height: 2.5em;
+   color: white;
+   border-color: #2b2b2b;
  }
- 
+
  #options:hover {
      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     color: #3face2;
+     border-color: #2b2b2b;
+
  }
 
 #aside-menu {
   position: fixed;
+  top: 75px;
   left: 90vw;
   font-family: 'Arvo', serif !important;
 }
 
-#hide-options {
+/*#hide-options {
   cursor:url(http://orig10.deviantart.net/ae1f/f/2015/020/a/3/hearthstone_cursor_by_sonic4000-d8er4gl.png), auto;
   text-decoration: underline;
-}
+}*/
 
- a {
+ /*a {
    color: #000;
    cursor:url(http://orig10.deviantart.net/ae1f/f/2015/020/a/3/hearthstone_cursor_by_sonic4000-d8er4gl.png), auto;
    &:visited {
      color: black;
-   }
+   }*/
  }
- 
- .dash-links a, .myButton {
+
+ /*.dash-links a, .myButton {
    &:visited {
      color: white;
-   }
+   }*/
  }
 
  #notice {
@@ -147,7 +232,3 @@
   position: relative;
   top: 0.5em;
 }
-
-
-
-
