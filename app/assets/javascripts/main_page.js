@@ -18,6 +18,23 @@ $(document).ready(function(){
   //   $(this).fadeOut('fast');
   // });
 
+  $('#connectLink').focus(function() {        // Changing the clickon border color for buttons in ROOMS.
+    $(this).css('outline-color', 'none');
+  });
+
+  $('#disconnectLink').focus(function() {
+    $(this).css('outline-color', 'none');
+  });
+
+  $('#publishLink').focus(function() {
+    $(this).css('outline-color', 'none');
+  });
+
+  $('#unpublishLink').focus(function() {
+    $(this).css('outline-color', 'none');
+  });
+
+
 
 
 

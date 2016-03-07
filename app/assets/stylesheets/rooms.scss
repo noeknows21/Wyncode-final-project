@@ -8,59 +8,194 @@
   left: 38.6vw;
 }
 
-h2, .myButton {
-  text-align: center;
-}
+// h2, .myButton {
+//   text-align: center;
+// }
 
-.myButton {
-  position: relative;
-  left: 17vw;
-}
-// 
-h2,h3,h4 {
-font-family: 'Cinzel', serif;
+// .myButton {
+//   position: relative;
+//   left: 17vw;
+// }
+//
+// h2,h3,h4 {
+// font-family: 'Cinzel', serif;
+// }
+.join-hub-title {
+text-align: left;
+font-family: 'Fredoka One', cursive;
+font-size: 40px;
 }
 
 .join-hub-text {
   font-size: 2em;
 }
 
-form > input {
-  font-size: 1em;
-}
 
-form label {
-  font-size: 1.7em;
-}
+// form > input {
+//   font-size: 1em;
+// }
+//
+// form label {
+//   font-size: 1.7em;
+// }
+//
+// form input:nth-child(4){
+//   position: relative;
+//   bottom:0.1em;
+//   left:0.2em;
+//   margin-right: 0.25em;
+// }
+//
+// form input:last-child {
+//   width: 4em;
+//   height:1.75em;
+// }
+//
+// input {
+//   border-radius: 6px;
+//   font-size: 1.5em;
+//   height: 1.5em;
+//   width:13em;
+//   background-color: white;
+//   font-family: 'Cinzel', serif;
+// }
 
-form input:nth-child(4){
+// .secret-code {
+//   font-family: 'Cinzel', serif;
+//   font-size: 1.25em;
+//   text-align: center;
+// }
+
+// .rooms-font-div * {
+//   font-family: 'Cinzel', serif;
+// }
+
+
+
+#connectLink, #disconnectLink, #publishLink, #unpublishLink {
+  border-radius: 5px;
+  padding: 8px 0px;
+  width: 230px;
+  font-size: 15px;
   position: relative;
-  bottom:0.1em;
-  left:0.2em;
-  margin-right: 0.25em;
-}
-  
-form input:last-child {
-  width: 4em;
-  height:1.75em;
-}
-
-input {
-  border-radius: 6px;
-  font-size: 1.5em;
-  height: 1.5em;
-  width:13em;
-  background-color: white;
-  font-family: 'Cinzel', serif;
+  top: 0.5em;
+  color: #fff;
+  background-color: black;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+  border: black;
+  text-align: center;
+  margin: 10px;
 }
 
-.secret-code {
-  font-family: 'Cinzel', serif;
-  font-size: 1.25em;
+#unpublishLink {
+  margin-right: 1300px;
+  margin-left: 2.5px;
+}
+.list-unstyled{
+  list-style: none;
   text-align: center;
 }
 
-.rooms-font-div * {
-  font-family: 'Cinzel', serif;
+#connectLink:hover, #disconnectLink:hover, #publishLink:hover, #unpublishLink:hover {
+  color: #3face2;
+  border: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-  
+
+.start-publishing{
+  left: 485px;
+}
+
+
+//
+// .employee-btns {
+//   text-align: center;
+// }
+
+.create_sesh_btn2{
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 8px 65px;
+  width: 230px;
+  text-decoration: none;
+  position:relative;
+  margin-top: 70px;
+  -webkit-transition-duration: 0.2s;
+  color: #fff;
+}
+
+.create_sesh_btn{
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 8px 65px;
+  width: 230px;
+  text-decoration: none;
+  position:relative;
+  margin-top: 20px;
+  -webkit-transition-duration: 0.2s;
+  color: #fff;
+}
+.create_sesh_btn:hover, .create_sesh_btn2:hover {
+  color: #3face2;
+  border: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.smile-title {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  // font-size: 40px;
+
+}
+
+
+
+/**********************************
+ TOP HEADER
+***********************************/
+
+#top-header {
+  background-color: #2b2b2b;
+  margin: -15px 0 0 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  height: 90px;
+  position: static;
+
+}
+
+#top-header-room {
+  background-color: #2b2b2b;
+  margin: -15px 0 0 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  height: 90px;
+  position: static;
+
+}
+
+
+/**********************************
+ BOTTOM FOOTER
+***********************************/
+
+#bottom-footer {
+background-color: #2b2b2b;
+height: 140px;
+width: 100%;
+margin-top: 290px;
+position: static;
+}
+
+#bottom-footer-room {
+background-color: #2b2b2b;
+height: 140px;
+width: 100%;
+margin-top: 340px;
+// position: static;
+}
