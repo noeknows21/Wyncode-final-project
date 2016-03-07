@@ -135,25 +135,34 @@
      background-repeat: no-repeat;
  }
 
+button #options {
+  text-align: right;
+}
+
  #options {
    border-radius: 5px;
-   /*background-color:  #ccffff;*/
+   background-color: transparent;
    font-family: 'Arvo', serif !important;
    font-size: 0.9em;
-   left: 4.5em;
+   left: 80.0em;
    top: 1.5em;
    bottom: 1.5em;
-   position: relative;
+   position: fixed;
    height: 2.5em;
    color: white;
+   border-color: #2b2b2b;
  }
 
  #options:hover {
-     /*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     color: #3face2;
+     border-color: #2b2b2b;
+
  }
 
 #aside-menu {
   position: fixed;
+  top: 75px;
   left: 90vw;
   font-family: 'Arvo', serif !important;
 }

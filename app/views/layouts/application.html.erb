@@ -21,16 +21,16 @@
 
 
   <% if current_user && params[:action] != "new" && params[:controller] != "info"%>
+  <button type="button", id="options">
+    <i class="fa fa-bars fa-lg"></i>
+  </button>
     <aside id="aside-menu">
       <p id="hello-user"> Hello <%= current_user.name %>
-      <p id="menu-back">  <%= link_to 'Previous page', :back %>
-      <p id="menu-dash"> <%= link_to 'Dashboard', current_user %>
-      <p id="menu-logout"> <%= link_to "Logout", '/logout' %> </p>
-      <p id="exit-demo"> Exit Demo </p>
-      <p id="hide-options"> Hide Options </p>
-      <button type="button", id="options">
-        <i class="fa fa-bars fa-2x"></i>
-      </button>
+      <p id="menu-back">  <%= link_to 'PREVIOUS PAGE', :back %>
+      <p id="menu-dash"> <%= link_to 'MAIN', current_user %>
+      <p id="menu-logout"> <%= link_to "LOGOUT", '/logout' %> </p>
+      <p id="exit-demo"> EXIT DEMO </p>
+      <p id="hide-options"> HIDE MENU </p>
     </aside>
 
   <% end %>
