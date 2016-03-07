@@ -1,9 +1,14 @@
-$(function () {
+function waitForElement(){
   
   var smileString = $('#smile_array').val();
-  var smileNumberArray = smileString.split(' ').map(Number);
+  
   var frownString = $('#frown_array').val();
-  var frownNumberArray = frownString.split(' ').map(Number);
+  
+  
+    if(typeof smileString !== "undefined"){
+      
+      var smileNumberArray = smileString.split(' ').map(Number);
+      var frownNumberArray = frownString.split(' ').map(Number);
   
     $('#container').highcharts({
         title: {
@@ -47,4 +52,13 @@ $(function () {
             data: frownNumberArray
         }]
     });
-});
+    
+  }
+  
+  else{
+      setTimeout(function(){
+          waitForElement();
+      },1000);
+  }
+};
+waitForElement();

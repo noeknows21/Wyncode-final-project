@@ -32,6 +32,7 @@ function ready() {
   var sessionId = $('#foo-name').val(); // Replace with your own session ID. See https://dashboard.tokbox.com/projects
   var token = $('#token').val();  // Replace with a generated token. See https://dashboard.tokbox.com/projects
 
+
   var session;
   var publisher;
   var subscribers = {};
@@ -167,7 +168,7 @@ function ready() {
   function show(id) {
     document.getElementById(id).style.display = 'block';
   }
-
+  
   function hide(id) {
     document.getElementById(id).style.display = 'none';
   }
@@ -188,12 +189,13 @@ function ready() {
   $('#disconnectLink').click(function() {
     disconnect();
   });
-
+  
+  if (document.getElementById('connectLink') !== null) {
   show ('connectLink');
   connect();
   hide('disconnectLink');
   hide('connectLink');
-
+}
   //--------------------------------------
   //  OPENTOK TEXT CHAT
   //--------------------------------------
