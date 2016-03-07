@@ -178,13 +178,13 @@ button #options {
    &:visited {
      color: black;
    }*/
- }
+ /*}*/
 
  /*.dash-links a, .myButton {
    &:visited {
      color: white;
    }*/
- }
+ /*}*/
 
  #notice {
    color: green;
