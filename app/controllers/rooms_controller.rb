@@ -40,7 +40,7 @@ class RoomsController < ApplicationController
       @video_url_for_table = "https://s3.amazonaws.com/pitchusers/transcoder/output/#{@archive_id}.mp4"
       customer = current_user.name
       chosen_user.videos.create(url: @video_url_for_table, customer: customer)
-
+      
   end
   
   def join_hub
