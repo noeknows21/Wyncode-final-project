@@ -1,4 +1,4 @@
 <h2> <%=current_user.name%>'s Video Logs </h2>
   <% @all_videos.each do |v| %>
-    <p> <%= "Your chat with" + v.customer %> </p>
+    <a href='<%=v.url%>'> <%= "View your video chat with" + v.customer %> </a>
   <%end%>

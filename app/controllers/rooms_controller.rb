@@ -37,8 +37,9 @@ class RoomsController < ApplicationController
       { :body => { "sessionId" => "#{@session_id}", "hasAudio" => true, "hasVideo" => true, "name" => "#{current_user.name}", "outputMode" => "individual"}.to_json,
       :headers => { 'Content-Type' => 'application/json', 'X-TB-PARTNER-AUTH' => '45508312:8face9e9bb645dd756bd1def75b786bbad83ea75'}})  
       @archive_id = @archive_response["id"]
+      @video_url_for_table = "https://s3.amazonaws.com/pitchusers/transcoder/output/#{@archive_id}.mp4"
       customer = current_user.name
-      chosen_user.videos.create(url: @archive_id, customer: customer)
+      chosen_user.videos.create(url: @video_url_for_table, customer: customer)
 
   end
   
