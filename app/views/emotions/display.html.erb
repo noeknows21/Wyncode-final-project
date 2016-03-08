@@ -1,12 +1,8 @@
 
 
-<h1> <%=User.all.order(updated_at: :desc).first.videos.first.url%></h1>
-
 <h2> <%=current_user.name%>'s Video Logs </h2>
-  <% @current_user_videos.each do |v| %>
-    <li><a href='<%=v.url%>'> <%= v.url %> </a><li>
-     <!-- <a href="#"> <%#= "emotion track" %> </a><br> -->
+  <% @current_user_videos.each_with_index do |v, index| %>
+    <a href='<%="https://s3.amazonaws.com/pitchusers/#{v}"%>'> <%= "Video" + (index + 1).to_s %> </a> <br>
+    <a href='<%="/emotions/graph/#{v.gsub(/.mp4/, "")}"%>'> <%= "Obtain Emotion Analysis" %> </a> <br>
   <%end%>
-  
-  <!--"View your video chat with"  + v.customer  -->
 
