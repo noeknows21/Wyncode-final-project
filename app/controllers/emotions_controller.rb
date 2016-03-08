@@ -8,7 +8,7 @@ class EmotionsController < ApplicationController
       "app_key" => '24ad28c4dd3c94df26b2ac78d96a5ccf'
     }
 
-    @video_url = params[:url]
+    @video_url = "https://s3.amazonaws.com/pitchusers/" +params[:url]
     @response = HTTParty.post("https://api.kairos.com/media?source=#{@video_url}&timeout=30", { headers: headers })
 
     # @response = HTTParty.post("https://api.kairos.com/media?source=https://s3.amazonaws.com/pitchusers/transcoder/output/f29b202b-1de6-4d12-9cf5-b4b37f4e8d7d-1457292784695.mp4&timeout=30", { headers: headers })
