@@ -21,10 +21,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="">PRODUCT</a></li>
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">TECHNOLOGY</a></li>
-        <li><a href="">CONTACT</a></li>
+        <li><a class="product">PRODUCT</a></li>
+        <li><a class="about">ABOUT</a></li>
+        <li><a class="technology">TECHNOLOGY</a></li>
+        <li><a class="contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -56,6 +56,30 @@
 
   <section id="product-background">
 
+<div class="product-images">
+  <div class="video-img">
+    <%= image_tag("video.png", size: "325x325" ) %>
+  </div>
+
+  <div class="arrow1">
+  <%= image_tag("arrow.png", size: "100x50") %>
+  </div>
+
+  <div class="smile-img">
+    <%= image_tag("smile.png", size: "325x325") %>
+  </div>
+
+  <div class="arrow2">
+  <%= image_tag("arrow2.png", size: "100x50") %>
+  </div>
+
+
+  <div class="graph-img">
+  <%= image_tag("graph.png", size: "325x325") %>
+  </div>
+</div>
+
+
 
   </section>
 
@@ -81,7 +105,7 @@
     <section id="tecnology-background">
 
       <div class="tec-image">
-        <%= image_tag("tecicons2.png") %>
+        <%= image_tag("tecicons2.png", size: "1000x550") %>
     </div>
 
 
