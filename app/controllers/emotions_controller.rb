@@ -45,7 +45,12 @@ class EmotionsController < ApplicationController
   end
 
   def display
-    @current_user_videos = current_user.videos
+    @current_user_videos = []
+    current_user.videos.each do |v|
+      unless v.include?('http')
+        @current_user_videos << v.url
+      end
+    end
   end
 
   def mp4_created
