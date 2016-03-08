@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/emotions/index'
   post '/emotions/index'
   get '/info/about_tech'
-  get '/emotions/graph'
+  get '/emotions/graph/:url'
   get '/emotions/mp4_created'
   post '/emotions/mp4_created'
 
