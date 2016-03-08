@@ -47,7 +47,7 @@ class EmotionsController < ApplicationController
   def display
     @current_user_videos = []
     current_user.videos.each do |v|
-      unless v.include?('http')
+      unless v.url.include?('http')
         @current_user_videos << v.url
       end
     end
