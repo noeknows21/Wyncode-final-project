@@ -137,6 +137,7 @@
 
 button #options {
   text-align: right;
+
 }
 
  #options {
@@ -147,10 +148,11 @@ button #options {
    left: 80.0em;
    top: 1.5em;
    bottom: 1.5em;
-   position: fixed;
    height: 2.5em;
    color: white;
    border-color: #2b2b2b;
+   position: absolute !important;
+   border: none;
  }
 
  #options:hover {
