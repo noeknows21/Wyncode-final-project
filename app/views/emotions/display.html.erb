@@ -1,10 +1,8 @@
 
 
-<h1> <%=User.all.order(updated_at: :desc).first.videos.first.url%></h1>
-
 <h2> <%=current_user.name%>'s Video Logs </h2>
   <% @current_user_videos.each do |v| %>
-    <li><a href='<%=v.url%>'> <%= v.url %> </a><li>
+    <li><a href='<%=v%>'> <%= v %> </a><li>
   <%end%>
   <!-- <a href="#"> <%#= "emotion track" %> </a><br> -->
   <!--"View your video chat with"  + v.customer  -->
