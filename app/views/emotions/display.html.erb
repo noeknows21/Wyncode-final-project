@@ -3,7 +3,7 @@
 <section id="top-header"></section>
 
 
-<h2> <%=current_user.name%>'s VIDEOS</h2>
+<h2> <%=current_user.name%>'s videos</h2>
   <% @current_user_videos.each_with_index do |v, index| %>
     <a href='<%="https://s3.amazonaws.com/pitchusers/#{v}"%>' class="videos-titles"> <%= "VIDEO" + (index + 1).to_s %> </a> <br>
     <br>
@@ -12,7 +12,7 @@
     <a href='<%="/emotions/graph/#{v.gsub(/.mp4/, "")}"%>' class="emotions-titles"> <%= "Obtain Emotion Analysis" %> </a> <br>
     <br>
     <br>
-    
+
   <%end%>
 
 <section id="bottom-footer"></section>
