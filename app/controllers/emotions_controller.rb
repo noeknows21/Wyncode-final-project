@@ -10,7 +10,7 @@ class EmotionsController < ApplicationController
 
     # @video_url = "https://s3.amazonaws.com/pitchusers/transcoder/output/e9885853-8359-42dd-9f4f-d30cf30187c4-1457396327032.mp4"
     @video_url = "https://s3.amazonaws.com/pitchusers/transcoder/output/" +params[:url] + ".mp4"
-    @response = HTTParty.post("https://api.kairos.com/media?source=#{@video_url}&timeout=59", { headers: headers })
+    @response = HTTParty.post("https://api.kairos.com/media?source=#{@video_url}&timeout=25", { headers: headers })
     # 
     # 
     # @smile_pre_array = []
