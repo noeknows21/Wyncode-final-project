@@ -62,13 +62,21 @@ $(document).ready(function(){
   });
 
 
-  // /*************** click on nav bar to sections *************/
+  // /*************** click on EMOTRAK on navbar to scroll up *************/
   //
-  // $('.product').click(function(){
-  //   ('#product-background').scroll()
+  // $('.title1').click(function(){
+  //   ('#video-display').scrolltop();
   // });
+  //
 
-
-
+ //  $(".title1").on("click", function() {
+ //
+ //     e.preventDefault();
+ //
+ //     $('#product-background').animate({
+ //         scrollTop: $( $(this).attr('href') ).offset().top
+ //     }, 600);
+ //
+ // });
 
 });
