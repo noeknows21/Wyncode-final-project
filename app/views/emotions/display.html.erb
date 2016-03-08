@@ -1,3 +1,6 @@
+<%= stylesheet_link_tag params[:controller] %>
+
+<section id="top-header"></section>
 
 
 <h2> <%=current_user.name%>'s Video Logs </h2>
@@ -6,3 +9,4 @@
     <a href='<%="/emotions/graph/#{v.gsub(/.mp4/, "")}"%>'> <%= "Obtain Emotion Analysis" %> </a> <br>
   <%end%>
 
+<section id="bottom-footer"></section>
