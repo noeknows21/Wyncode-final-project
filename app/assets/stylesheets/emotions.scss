@@ -6,6 +6,39 @@ h1, h2 {
   font-family: 'Fredoka One', cursive;
 }
 
+.videos-titles {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 8px 55px;
+  width: 230px;
+  text-decoration: none;
+  position:relative;
+  margin-top: 20px;
+  -webkit-transition-duration: 0.2s;
+  color: #fff;
+}
+
+.videos-titles:hover, .emotions-titles:hover {
+  color: #3face2;
+  border: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.emotions-titles {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 8px 55px;
+  width: 230px;
+  text-decoration: none;
+  position:relative;
+  margin-top: 20px;
+  -webkit-transition-duration: 0.2s;
+  color: #fff;
+}
 
 /**********************************
  TOP HEADER
