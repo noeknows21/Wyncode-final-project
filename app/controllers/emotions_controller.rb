@@ -54,7 +54,7 @@ class EmotionsController < ApplicationController
     p @receive_mp4
     
     # @formatted_mp4 = "https://s3.amazonaws.com/pitchusers/" + @receive_mp4
-    User.where.not(session_id: nil).order(updated_at: :desc).first.videos.create(url: @receive_mp4)
+    User.all.order(updated_at: :desc).first.videos.create(url: @receive_mp4)
   end
 
   def index
