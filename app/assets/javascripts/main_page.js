@@ -35,6 +35,39 @@ $(document).ready(function(){
   });
 
 
+/*************** styling nav bar when scrolling *************/
+
+  $('#product-background').mouseenter(function() {
+    $('.product').css('color', '#3face2');
+  });
+
+  $('#product-background').mouseleave(function() {
+        $('.product').css('color', '#fff');
+  });
+
+  $('#about-background').mouseenter(function() {
+    $('.about').css('color', '#3face2');
+  });
+
+  $('#about-background').mouseleave(function() {
+        $('.about').css('color', '#fff');
+  });
+
+  $('#tecnology-background').mouseenter(function() {
+    $('.technology').css('color', '#3face2');
+  });
+
+  $('#tecnology-background').mouseleave(function() {
+        $('.technology').css('color', '#fff');
+  });
+
+
+  // /*************** click on nav bar to sections *************/
+  //
+  // $('.product').click(function(){
+  //   ('#product-background').scroll()
+  // });
+
 
 
 
