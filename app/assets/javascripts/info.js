@@ -10,7 +10,7 @@ $(document).ready(function(){
   });                                        //Hover over button and text change.
 
   $('.demo-btn').mouseleave(function() {
-    $(this).text('EMOTRAK');
+    $(this).text('TREMO');
 });
 
 

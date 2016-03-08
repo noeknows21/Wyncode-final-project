@@ -120,21 +120,26 @@ SECTION VIDEO DISPLAY
 // height: 870px;
 // width: 1475px;
 position: relative;
-// background-size: cover;
-padding-top: 70px;
+background-size: cover;
+// padding-top: 70px;
+}
+
+video {
+  height: auto;
+  width: auto;
 }
 
 .full-vid {
 position: static;
 z-index: -1;
 bottom: 60px;
-width: 1475px;
+// background-color: hsla(180,60%,70%,0.3);
 }
 
 .button-demo {
   text-align: center;
   position: relative;
-  bottom: 610px;
+  bottom: 500px;
   left: 530px;
   // margin-top: 245px;
 }
@@ -164,7 +169,7 @@ button:hover {
   float: right;
   color: black;
   position:relative;
-  bottom: 400px;
+  bottom: 150px;
 }
 
 /**********************************
