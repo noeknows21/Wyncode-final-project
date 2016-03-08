@@ -203,8 +203,17 @@ margin-top: 340px;
 
 #bottom-footer4 {
 background-color: #2b2b2b;
+position: absolute !important;
 height: 140px;
 width: 100%;
 margin-top: 210px;
 position: static;
+}
+
+#bottom-footer5 {
+background-color: #2b2b2b;
+height: 140px;
+width: 100%;
+margin-top: 290px;
+position: absolute !important;
 }
