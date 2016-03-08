@@ -1,5 +1,7 @@
 <%= stylesheet_link_tag params[:controller] %>
 
+<section id="top-header4"></section>
+
 <%= hidden_field_tag "foo_name", @session_id, { :id => "foo-name" }%>
 <%= hidden_field_tag "token", @token, { :id => "token" }%>
 
@@ -10,6 +12,7 @@
   <input type="button" value="Start Publishing" id ="publishLink">
   <input type="button" value="Stop Publishing" id ="unpublishLink">
 </div>
+
 <div id="myCamera" class="publisherContainer"></div>
 <div id="subscribers"></div>
 
@@ -22,3 +25,6 @@
 
 <p id="lol"></p>
 <br>
+
+
+<section id="bottom-footer4"></section>
