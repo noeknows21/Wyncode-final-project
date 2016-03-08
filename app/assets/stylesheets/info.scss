@@ -115,16 +115,17 @@ SECTION VIDEO DISPLAY
 #video-display {
 // background: url("https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240https://images.unsplash.com/photo-1445346366695-5bf62de05412?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4d45219daceebf69863f18d30c5ab240");
 // background-color:#82858c;
-background-color: hsla(180,60%,70%,0.3);
+// background-color: hsla(180,60%,70%,0.3);
 // opacity: 90%;
-height: 680px;
+// height: 870px;
+// width: 1475px;
 position: relative;
 // background-size: cover;
 padding-top: 70px;
 }
 
 .full-vid {
-position: relative;
+position: static;
 z-index: -1;
 bottom: 60px;
 width: 1475px;
