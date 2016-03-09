@@ -51,8 +51,10 @@
     color: #666;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }*/
-  img {
+  video {
     z-index: -1;
+    width: 100vw;
+    height: 100vh;
   }
   </style>
 
@@ -60,10 +62,14 @@
 
 <body>
   <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
+  
+  <!-- <div class="dialog">
+    <div> -->
       <h1>The page you were looking for doesn't exist. OOoouUUUU</h1>
-   <img src="http://pugetsoundbirds.org/wp-content/uploads/2010/06/Northern-saw-whet-owl.jpg" alt="owl" height="100vh" width="100vw">
-  </div>
+      <video autoplay loop>
+        <source src="https://s3.amazonaws.com/pitchusers/pitchvid.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
 </body>
 </html>
