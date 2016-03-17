@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  before_action :authorize
   
   def create_private
     @session_id = $session.session_id

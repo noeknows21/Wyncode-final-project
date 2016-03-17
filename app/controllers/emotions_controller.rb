@@ -1,5 +1,6 @@
 class EmotionsController < ApplicationController
   skip_before_filter :verify_authenticity_token
+  before_action :authorize, except: [:mp4_created, :index]
 
   def graph
 
