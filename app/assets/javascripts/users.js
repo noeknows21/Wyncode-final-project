@@ -28,7 +28,7 @@ function ready() {
     $('#options').show();
   });
 
-  var apiKey = 45508312; // Replace with your API key. See https://dashboard.tokbox.com/projects
+  var apiKey = ENV["OT_API_KEY"]; // Replace with your API key. See https://dashboard.tokbox.com/projects
   var sessionId = $('#foo-name').val(); // Replace with your own session ID. See https://dashboard.tokbox.com/projects
   var token = $('#token').val();  // Replace with a generated token. See https://dashboard.tokbox.com/projects
 

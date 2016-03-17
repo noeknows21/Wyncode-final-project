@@ -4,8 +4,8 @@ class EmotionsController < ApplicationController
   def graph
 
     headers = {
-      "app_id" => '4985f625',
-      "app_key" => '24ad28c4dd3c94df26b2ac78d96a5ccf'
+      "app_id" => ENV["KAIROS_API_ID"],
+      "app_key" => ENV["KAIROS_API_KEY"]
     }
 
     # @video_url = "https://s3.amazonaws.com/pitchusers/transcoder/output/e9885853-8359-42dd-9f4f-d30cf30187c4-1457396327032.mp4"
