@@ -9,7 +9,7 @@ class RoomsController < ApplicationController
   end
   
   def create_sesh
-    @opentok = OpenTok::OpenTok.new 45508312, "8face9e9bb645dd756bd1def75b786bbad83ea75"
+    @opentok = OpenTok::OpenTok.new Rails.application.secrets.ot_api_key, Rails.application.secrets.ot_api_secret
     @session = @opentok.create_session :media_mode => :routed
     @session_id = @session.session_id
     @token = @session.generate_token
@@ -23,7 +23,7 @@ class RoomsController < ApplicationController
   def create_hub
     @needed_id = current_user.id
     
-    @opentok = OpenTok::OpenTok.new 45508312, "8face9e9bb645dd756bd1def75b786bbad83ea75"
+    @opentok = OpenTok::OpenTok.new Rails.application.secrets.ot_api_key, Rails.application.secrets.ot_api_secret
     $session = @opentok.create_session :media_mode => :routed
   end
   
