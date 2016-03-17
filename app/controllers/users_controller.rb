@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     current_user.session_id = nil
-    current_user.save
+    current_user.save(validate: false)
   end
 
   # GET /users/new

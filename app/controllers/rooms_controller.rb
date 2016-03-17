@@ -6,7 +6,7 @@ class RoomsController < ApplicationController
     @token = $session.generate_token
     
     current_user.token = $session.generate_token
-    current_user.save
+    current_user.save(validate: false)
   end
   
   def create_sesh
@@ -18,7 +18,7 @@ class RoomsController < ApplicationController
     current_user.token = @session.generate_token
     
     current_user.session_id = @session_id
-    current_user.save
+    current_user.save(validate: false)
   end
   
   def create_hub
